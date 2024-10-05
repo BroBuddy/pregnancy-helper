@@ -42,32 +42,32 @@ const WeekDetail = () => {
                 )}
             </div>
 
-            <Tabs defaultValue="baby" className="w-[500px]">
+            <Tabs defaultValue="baby" className="w-[410px]">
                 <TabsList className="flex flex-row justify-center">
                     <TabsTrigger
                         value="baby"
-                        className="flex flex-col bg-gray-50 mx-2 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
                     >
                         <img src={`/icons/baby.svg`} alt="" />
                         Baby
                     </TabsTrigger>
                     <TabsTrigger
                         value="highlights"
-                        className="flex flex-col bg-gray-50 mx-2 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
                     >
                         <img src={`/icons/highlights.svg`} alt="" />
                         Highlights
                     </TabsTrigger>
                     <TabsTrigger
                         value="symptoms"
-                        className="flex flex-col bg-gray-50 mx-2 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
                     >
                         <img src={`/icons/symptoms.svg`} alt="" />
                         Symptome
                     </TabsTrigger>
                     <TabsTrigger
                         value="checklist"
-                        className="flex flex-col bg-gray-50 mx-2 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
                     >
                         <img src={`/icons/checklist.svg`} alt="" />
                         Checkliste

@@ -93,7 +93,7 @@ function App() {
                                             )}
                                             )
                                         </span>
-                                        &nbsp;
+                                        <br />
                                         <Link to={`/week/${item.week}`}>
                                             Go to Week {item.week}
                                         </Link>
