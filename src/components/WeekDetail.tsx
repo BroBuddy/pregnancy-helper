@@ -89,13 +89,26 @@ const WeekDetail = () => {
                                         />
                                     </div>
 
-                                    <div>
-                                        <strong>Größe:</strong>{' '}
-                                        {details?.baby.length} cm
-                                    </div>
-                                    <div>
-                                        <strong>Gewicht:</strong>{' '}
-                                        {details?.baby.weight} kg
+                                    <div className="flex flex-row w-full">
+                                        <div className="flex flex-col grow items-center justify-end">
+                                            <img
+                                                src={`/icons/ruler.svg`}
+                                                alt=""
+                                                width="40"
+                                            />
+                                            <strong>Größe:</strong>{' '}
+                                            {details?.baby.length} cm
+                                        </div>
+
+                                        <div className="flex flex-col grow items-center justify-end">
+                                            <img
+                                                src={`/icons/scale.svg`}
+                                                alt=""
+                                                width="30"
+                                            />
+                                            <strong>Gewicht:</strong>{' '}
+                                            {details?.baby.weight} kg
+                                        </div>
                                     </div>
                                 </>
                             )}

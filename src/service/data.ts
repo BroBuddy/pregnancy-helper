@@ -156,7 +156,7 @@ export const Timeline = [
                     },
                 ],
                 baby: {
-                    length: 22.19,
+                    length: 22.2,
                     weight: 0.22,
                     size: 'Ihr Baby ist etwa so groß wie eine Paprika',
                 },
@@ -229,18 +229,43 @@ export const Timeline = [
             },
             {
                 week: 23,
+                baby: {
+                    length: 30.6,
+                    weight: 0.57,
+                    size: 'Ihr Baby ist etwa so groß wie eine große Mango',
+                },
             },
             {
                 week: 24,
+                baby: {
+                    length: 32.2,
+                    weight: 0.67,
+                    size: 'Ihr Baby ist etwa so groß wie eine Kornähre',
+                },
             },
             {
                 week: 25,
+                baby: {
+                    length: 33.7,
+                    weight: 0.78,
+                    size: 'Ihr Baby ist etwa so groß wie eine Steckrübe',
+                },
             },
             {
                 week: 26,
+                baby: {
+                    length: 35.1,
+                    weight: 0.91,
+                    size: 'Ihr Baby ist etwa so groß wie eine Frühlingszwiebel',
+                },
             },
             {
                 week: 27,
+                baby: {
+                    length: 36.6,
+                    weight: 1.06,
+                    size: 'Ihr Baby ist etwa so groß wie ein Blumenkohlkopf',
+                },
             },
         ],
     },
