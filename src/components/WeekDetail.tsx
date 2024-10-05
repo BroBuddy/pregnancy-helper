@@ -42,35 +42,35 @@ const WeekDetail = () => {
                 )}
             </div>
 
-            <Tabs defaultValue="baby" className="w-[410px]">
+            <Tabs defaultValue="baby" className="w-full">
                 <TabsList className="flex flex-row justify-center">
                     <TabsTrigger
                         value="baby"
-                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
-                        <img src={`/icons/baby.svg`} alt="" />
-                        Baby
+                        <img src={`/icons/baby.svg`} alt="" width="35" />
+                        <span className="text-sm">Baby</span>
                     </TabsTrigger>
                     <TabsTrigger
                         value="highlights"
-                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
-                        <img src={`/icons/highlights.svg`} alt="" />
-                        Highlights
+                        <img src={`/icons/highlights.svg`} alt="" width="45" />
+                        <span className="text-sm">Highlights</span>
                     </TabsTrigger>
                     <TabsTrigger
                         value="symptoms"
-                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
-                        <img src={`/icons/symptoms.svg`} alt="" />
-                        Symptome
+                        <img src={`/icons/symptoms.svg`} alt="" width="45" />
+                        <span className="text-sm">Symptome</span>
                     </TabsTrigger>
                     <TabsTrigger
                         value="checklist"
-                        className="flex flex-col bg-gray-50 p-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-center"
+                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
-                        <img src={`/icons/checklist.svg`} alt="" />
-                        Checkliste
+                        <img src={`/icons/checklist.svg`} alt="" width="30" />
+                        <span className="text-sm">Checkliste</span>
                     </TabsTrigger>
                 </TabsList>
 

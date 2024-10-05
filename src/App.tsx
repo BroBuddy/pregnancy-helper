@@ -39,18 +39,19 @@ function App() {
 
     return (
         <section>
-            <div>Sex ca. am {getFullDate(timeOfSex)}</div>
-            <div>Geburt ca. am {getFullDate(birthDay)}</div>
-            <br />
+            <div className="card">
+                <div>Geburt am {getFullDate(birthDay)}</div>
+                <div>Start am {getFullDate(timeOfSex)}</div>
+            </div>
 
             <div>
                 {timeline.map((trimester, index) => {
                     return (
-                        <div key={index}>
+                        <div className="card" key={index}>
                             <h2>
                                 <strong>
-                                    {index + 1}. Trimester ({trimester.timeline}{' '}
-                                    Wochen)
+                                    {index + 1}. Trimester (Woche{' '}
+                                    {trimester.timeline})
                                 </strong>
                             </h2>
 
@@ -71,13 +72,13 @@ function App() {
                                                 )
                                             )
                                                 ? '#1fc1fc'
-                                                : '#fff',
+                                                : '',
                                         }}
                                     >
-                                        <span>{item.week}. Woche</span>
-                                        &nbsp;
+                                        <strong>{item.week}. Woche</strong>
+                                        <br />
+
                                         <span>
-                                            (
                                             {getFullDate(
                                                 calculateDate(
                                                     weeksOfPregnancy -
@@ -91,11 +92,10 @@ function App() {
                                                     weeksOfPregnancy - item.week
                                                 )
                                             )}
-                                            )
                                         </span>
                                         <br />
                                         <Link to={`/week/${item.week}`}>
-                                            Go to Week {item.week}
+                                            Details für die {item.week}. Woche
                                         </Link>
                                     </div>
                                 )
