@@ -204,7 +204,7 @@ export const Timeline = [
                             'Geburtsvorbereitungskurse, die zwischen einem Tag und einem Monat oder länger dauern, werden dringend empfohlen, um Sie auf die Geburt vorzubereiten. Sie erfahren, was Sie vor, während und nach der Wehen erwartet, und erfahren Techniken, die Ihnen bei der Bewältigung der Wehenschmerzen helfen. Kurse finden Sie in Krankenhäusern, bei unabhängigen Geburtshelfern und online.',
                     },
                     {
-                        name: 'Cope with stress',
+                        name: 'Mit Stress umgehen',
                         description:
                             'Neben der Entwicklung eines neuen Menschen haben Sie derzeit wahrscheinlich auch mit einer Reihe körperlicher Symptome und Veränderungen in Ihrem Leben zu kämpfen. Wer wäre nicht gestresst? Doch während Stress während der Schwangerschaft normal ist, kann er zu Problemen führen, wenn er zu stark wird. Erfahren Sie, wie Sie mit Schwangerschaftsstress gut umgehen können und wann Sie Hilfe bekommen.',
                     },
