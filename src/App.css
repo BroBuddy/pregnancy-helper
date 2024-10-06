@@ -4,6 +4,7 @@
 
 body {
     background-image: linear-gradient(239deg, #007bbd, #003f61);
+    padding-bottom: 70px;
 }
 
 .card {
