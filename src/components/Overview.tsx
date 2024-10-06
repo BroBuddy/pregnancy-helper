@@ -50,14 +50,17 @@ const Overview = () => {
                 <div className="flex mt-2">
                     <div className="card flex flex-col w-full">
                         <TabsContent value="highlights">
+                            <h2>Highlights</h2>
                             <OverviewContent items={highlights} />
                         </TabsContent>
 
                         <TabsContent value="symptoms">
+                            <h2>Symptome</h2>
                             <OverviewContent items={symptoms} />
                         </TabsContent>
 
                         <TabsContent value="checklist">
+                            <h2>Checkliste</h2>
                             <OverviewContent items={checklist} />
                         </TabsContent>
                     </div>

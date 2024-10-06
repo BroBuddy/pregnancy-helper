@@ -26,7 +26,7 @@ const TrimesterOverview = () => {
         return new Date(birthDay.getTime() - week * 7 * 24 * 60 * 60 * 1000)
     }
 
-    const timeOfSex = calculateDate(weeksOfPregnancy)
+    const startDate = calculateDate(weeksOfPregnancy)
 
     const getFullDate = (date: any) => {
         return `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}`
@@ -41,7 +41,7 @@ const TrimesterOverview = () => {
             <div className="card flex flex-col items-center w-full">
                 <h2>Geburt</h2>
                 <p className="text-sm">Geburt am {getFullDate(birthDay)}</p>
-                <p className="text-sm">Start am {getFullDate(timeOfSex)}</p>
+                <p className="text-sm">Start am {getFullDate(startDate)}</p>
             </div>
 
             {timeline.map((trimester: any, index: number) => {

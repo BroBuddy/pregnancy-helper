@@ -1,36 +1,42 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+
+const weightTable: number[][] = [
+    [125, 175],
+    [300, 475],
+    [325, 475],
+]
 
 const WeightGain = () => {
     const [startWeight, setStartWeight] = useState<number>(55000)
+    const [weekWeight, setWeekWeight] = useState<number[][]>([])
+
     const defaultWeight = startWeight / 1000 + ' kg'
+    const weeksOfPregnancy: number = 41
 
-    const weeksOfPregnancy = 41
-    const weightTable = [
-        [125, 175],
-        [300, 475],
-        [325, 475],
-    ]
+    useEffect(() => {
+        const weightInWeek = [[startWeight, startWeight]]
 
-    const weightInWeek = [[startWeight, startWeight]]
-
-    for (let i = 0; i <= weeksOfPregnancy; i++) {
-        if (i < 14) {
-            weightInWeek.push([
-                weightInWeek[i][0] + weightTable[0][0],
-                weightInWeek[i][1] + weightTable[0][1],
-            ])
-        } else if (i >= 14 && i < 28) {
-            weightInWeek.push([
-                weightInWeek[i][0] + weightTable[1][0],
-                weightInWeek[i][1] + weightTable[1][1],
-            ])
-        } else if (i >= 28 && i <= 39) {
-            weightInWeek.push([
-                weightInWeek[i][0] + weightTable[2][0],
-                weightInWeek[i][1] + weightTable[2][1],
-            ])
+        for (let i = 0; i <= weeksOfPregnancy; i++) {
+            if (i < 14) {
+                weightInWeek.push([
+                    weightInWeek[i][0] + weightTable[0][0],
+                    weightInWeek[i][1] + weightTable[0][1],
+                ])
+            } else if (i >= 14 && i < 28) {
+                weightInWeek.push([
+                    weightInWeek[i][0] + weightTable[1][0],
+                    weightInWeek[i][1] + weightTable[1][1],
+                ])
+            } else if (i >= 28 && i <= 39) {
+                weightInWeek.push([
+                    weightInWeek[i][0] + weightTable[2][0],
+                    weightInWeek[i][1] + weightTable[2][1],
+                ])
+            }
         }
-    }
+
+        setWeekWeight(weightInWeek)
+    }, [startWeight])
 
     const getWeightIncrementByWeek = (increment: number[]) => {
         return (
@@ -72,7 +78,7 @@ const WeightGain = () => {
                         onChange={handleWeightAmount}
                     >
                         {Array.from({ length: 60 }).map(
-                            (_: any, index: number) => {
+                            (_: unknown, index: number) => {
                                 return (
                                     <option key={index}>{index + 40} kg</option>
                                 )
@@ -81,7 +87,7 @@ const WeightGain = () => {
                     </select>
                 </div>
 
-                {weightInWeek.map((increment: any, index: number) => {
+                {weekWeight.map((increment: number[], index: number) => {
                     return (
                         <React.Fragment key={index}>
                             <div className="flex flex-row justify-between mx-10">
