@@ -1,23 +1,29 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './index.css'
 import WeekDetail from './components/WeekDetail.tsx'
 import WeightGain from './components/WeightGain.tsx'
+import TrimesterOverview from './components/TrimesterOverview.tsx'
+import App from './App.tsx'
+import './index.css'
 
 const router = createBrowserRouter([
     {
-        path: '/',
         element: <App />,
-    },
-    {
-        path: '/week/:week',
-        element: <WeekDetail />,
-    },
-    {
-        path: '/weight-gain',
-        element: <WeightGain />,
+        children: [
+            {
+                path: '/',
+                element: <TrimesterOverview />,
+            },
+            {
+                path: '/week/:week',
+                element: <WeekDetail />,
+            },
+            {
+                path: '/weight-gain',
+                element: <WeightGain />,
+            },
+        ],
     },
 ])
 

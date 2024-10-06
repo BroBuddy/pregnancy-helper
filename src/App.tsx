@@ -1,8 +1,14 @@
+import { Outlet } from 'react-router-dom'
+import MobileNav from './components/MobileNav'
 import './App.css'
-import TrimesterOverview from './components/TrimesterOverview'
 
 function App() {
-    return <TrimesterOverview />
+    return (
+        <>
+            <Outlet />
+            <MobileNav />
+        </>
+    )
 }
 
 export default App
