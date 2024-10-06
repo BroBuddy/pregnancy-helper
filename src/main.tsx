@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import WeekDetail from './components/WeekDetail.tsx'
 import WeightGain from './components/WeightGain.tsx'
 import TrimesterOverview from './components/TrimesterOverview.tsx'
+import Overview from './components/Overview.tsx'
 import App from './App.tsx'
 import './index.css'
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             {
                 path: '/week/:week',
                 element: <WeekDetail />,
+            },
+            {
+                path: '/overview',
+                element: <Overview />,
             },
             {
                 path: '/weight-gain',

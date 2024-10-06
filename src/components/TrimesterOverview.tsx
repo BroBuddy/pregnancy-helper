@@ -39,18 +39,16 @@ const TrimesterOverview = () => {
     return (
         <section className="flex flex-col py-2 w-80">
             <div className="card flex flex-col items-center w-full">
-                <div>Geburt am {getFullDate(birthDay)}</div>
-                <div>Start am {getFullDate(timeOfSex)}</div>
+                <h2>Geburt</h2>
+                <p className="text-sm">Geburt am {getFullDate(birthDay)}</p>
+                <p className="text-sm">Start am {getFullDate(timeOfSex)}</p>
             </div>
 
             {timeline.map((trimester: any, index: number) => {
                 return (
                     <div className="card" key={index}>
                         <h2>
-                            <strong>
-                                {index + 1}. Trimester (Woche{' '}
-                                {trimester.timeline})
-                            </strong>
+                            {index + 1}. Trimester (Woche {trimester.timeline})
                         </h2>
 
                         {trimester.weeks.map((item: any, index: number) => {
@@ -77,7 +75,7 @@ const TrimesterOverview = () => {
                                         </strong>
                                         <br />
 
-                                        <span className="text-sm text-blue-400">
+                                        <span className="text-sm text-blue-500">
                                             {getFullDate(
                                                 calculateDate(
                                                     weeksOfPregnancy -
