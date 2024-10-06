@@ -8,39 +8,172 @@ export const Timeline = [
             },
             {
                 week: 2,
+                highlights: [
+                    {
+                        name: 'Bist du diese Woche schwanger?',
+                        description:
+                            'Sie sind noch nicht schwanger, aber wenn Sie diese Woche schwanger werden, sind Sie in der zweiten Woche schwanger. Das liegt daran, dass Gesundheitsdienstleister Ihre letzte Menstruation zur Bestimmung Ihres Geburtstermins heranziehen. Technisch gesehen ist der erste Tag Ihrer Periode also auch der erste Tag Ihrer Schwangerschaft. Da Ihr Eisprung etwa in der zweiten Woche Ihres Zyklus erfolgt, erfolgt die Empfängnis ungefähr zu dem Zeitpunkt, zu dem Sie in der zweiten Schwangerschaftswoche sind.',
+                    },
+                    {
+                        name: 'Der beste Zeitpunkt, um schwanger zu werden',
+                        description:
+                            'In den drei Tagen vor dem Eisprung sind Sie am fruchtbarsten. Anzeichen dafür, dass Sie einen Eisprung haben, sind Veränderungen Ihrer Basaltemperatur, Brustspannen, leichte Krämpfe und vermehrter Vaginalausfluss.',
+                    },
+                    {
+                        name: 'Eisprung erkennen',
+                        description:
+                            'Um schneller schwanger zu werden, verwenden Sie unseren Eisprungrechner, der Ihnen dabei helfen kann, Ihre fruchtbarsten Tage zu ermitteln. Sie können auch Ovulationsteststreifen verwenden, um die Tage herauszufinden, an denen Sex (oder Befruchtung) am wahrscheinlichsten zu einer Schwangerschaft führt.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Rutschiger Zervixschleim',
+                        description:
+                            'Zervixschleim ist der Vaginalausfluss, den Sie manchmal in Ihrer Unterwäsche finden. In den Tagen um den Eisprung wird es klar, rutschig und dehnbar sein – wie rohes Eiweiß.',
+                    },
+                    {
+                        name: 'Leichte Krämpfe',
+                        description:
+                            'Manche Frauen bemerken rund um den Eisprung leichte Krämpfe oder stechende Schmerzen im Unterleib oder einseitige Rückenschmerzen. Dies ist als Mittelschmerz bekannt – deutsch für „mittlerer Schmerz“.',
+                    },
+                    {
+                        name: 'Erhöhter Sexualtrieb',
+                        description:
+                            'In der Zeit, in der Sie fruchtbar sind, könnte sich Ihr Sexualtrieb steigern und Ihr Körpergeruch könnte für Männer attraktiver sein.',
+                    },
+                    {
+                        name: 'Erhöhter Geruchssinn',
+                        description:
+                            'Einige Studien haben ergeben, dass der Geruchssinn einer Frau in der Nähe des Eisprungs stärker wird – und möglicherweise besonders empfindlich auf männliche Pheromone reagiert.',
+                    },
+                    {
+                        name: 'Zarte Brüste',
+                        description:
+                            'Hormonelle Veränderungen rund um den Eisprung können dazu führen, dass sich Ihre Brüste etwas voll oder wund anfühlen. Um mehr darüber zu erfahren, was Sie in den kommenden Wochen erwartet, lesen Sie, wie sich die Brüste während der Schwangerschaft verändern.',
+                    },
+                    {
+                        name: 'Zervikale Veränderungen',
+                        description:
+                            'Während des Eisprungs ist Ihr Gebärmutterhals weicher, höher, feuchter und offener. Sie können diese Veränderungen spüren, wenn Sie mit einem Finger in Ihre Vagina greifen, um Ihren Gebärmutterhals zu untersuchen. Möglicherweise müssen Sie ihn jedoch täglich überprüfen, um die Unterschiede zu erkennen.',
+                    },
+                    {
+                        name: 'Ein Anstieg Ihrer Basaltemperatur',
+                        description:
+                            'Sie können Ihren BBT jeden Morgen mit einem speziellen Thermometer messen. Am Tag nach dem Eisprung steigt der Wert etwas an und bleibt bis zur nächsten Periode erhöht.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Nehmen Sie Ihre Vitamine',
+                        description:
+                            'Wenn Sie es noch nicht getan haben, beginnen Sie mit der täglichen Einnahme eines vorgeburtlichen Vitamins mit mindestens 400 Mikrogramm (mcg) Folsäure. Vorgeburtliche Vitamine liefern wichtige Nährstoffe für Sie und Ihr Baby, darunter Eisen, Vitamin D und Kalzium. Folsäure verringert das Risiko Ihres Babys für bestimmte Geburtsfehler und es ist wichtig, ausreichend Folsäure zu sich zu nehmen – insbesondere zu Beginn der Schwangerschaft, wenn sich das Neuralrohr Ihres Babys entwickelt.',
+                    },
+                    {
+                        name: 'Wenden Sie sich an Ihren Arzt',
+                        description:
+                            'Es ist eine gute Idee, eine Vorsorgeuntersuchung durchführen zu lassen, um sicherzustellen, dass Ihr Körper für die Geburt eines Kindes in der bestmöglichen Verfassung ist. Finden Sie heraus, ob Sie die Einnahme verschreibungspflichtiger oder rezeptfreier Medikamente oder Nahrungsergänzungsmittel abbrechen sollten. Nutzen Sie diese Zeit auch, um über alle Probleme oder Sorgen zu sprechen, die Sie im Zusammenhang mit Schwangerschaft oder Elternschaft haben.',
+                    },
+                    {
+                        name: 'Betrachten Sie den Bluttest',
+                        description:
+                            'Möglicherweise möchten Sie und Ihr Partner ein genetisches Träger-Screening durchführen lassen, um festzustellen, ob Sie Gene tragen, die Ihr Baby einem Risiko für schwere Erbkrankheiten aussetzen würden. Obwohl viele dieser Erkrankungen selten sind, ergab eine große Studie, dass 24 Prozent der getesteten Personen Träger mindestens einer genetischen Mutation waren. Ein Gespräch mit einem genetischen Berater wird Ihnen helfen, über Ihre Fortpflanzungsentscheidungen informiert zu bleiben.',
+                    },
+                    {
+                        name: 'Habe häufigen Sex',
+                        description:
+                            'Sie fragen sich, wie oft Sie Sex haben müssen, um schwanger zu werden? Studien zeigen, dass die höchsten Schwangerschaftsraten bei Paaren auftreten, die täglich oder jeden zweiten Tag Sex haben. Aber Sie müssen nicht so oft beschäftigt sein: Eine gute Faustregel ist, es mindestens alle zwei bis drei Tage kurz nach dem Ende Ihrer Periode zu versuchen. Spermien können etwa 72 Stunden in Ihrem Körper leben. Wenn Sie also innerhalb von drei Tagen vor dem Eisprung Sex haben, warten Spermien darauf, Ihre gerade freigesetzte Eizelle zu begrüßen.',
+                    },
+                    {
+                        name: 'Nehmen Sie sich Zeit für die Selbstfürsorge',
+                        description:
+                            'Wenn Sie sich um Ihre geistige und körperliche Gesundheit kümmern, sind Sie besser in der Lage, für andere zu sorgen. Fangen Sie jetzt damit an, Ihren Hunger zu stillen, indem Sie schwangerschaftsfördernde Lebensmittel zu sich nehmen, gut schlafen, Sport treiben und Ihren Stress bewältigen. Versuchen Sie es mit Massage, Yoga oder tiefem Atmen: Die Reduzierung Ihres Stressniveaus kann Ihre Chancen auf eine Schwangerschaft und eine gesunde Schwangerschaft erhöhen.',
+                    },
+                    {
+                        name: 'Bereiten Sie Ihren Körper auf die Schwangerschaft vor',
+                        description:
+                            'Wenn Sie sich die Zeit nehmen, Ihren Bauch und Rücken zu stärken, bevor (oder während) sich Ihr Körper verändert, werden Sie während der gesamten Schwangerschaft und darüber hinaus davon profitieren. Ein stärkerer Rumpf beugt Rückenproblemen vor, wenn Ihr Bauch wächst, und verkürzt sogar Ihre Erholungszeit nach der Geburt. Krafttraining und Yoga sind zwei gute Aktivitäten, die Ihnen helfen, stärker zu werden.',
+                    },
+                    {
+                        name: 'Wissen Sie, was Sie vermeiden sollten',
+                        description:
+                            'Wenn Sie schwanger werden möchten und gerade schwanger sind, sollten Sie Tabak, Marihuana, illegale Drogen, Alkohol und zu viel Koffein meiden.',
+                    },
+                ],
             },
             {
                 week: 3,
             },
             {
                 week: 4,
+                baby: {
+                    size: 'Ihr Baby ist etwa so groß wie ein Mohnsamen',
+                },
             },
             {
                 week: 5,
+                baby: {
+                    size: 'Ihr Baby ist etwa so groß wie ein Sesamkorn',
+                },
             },
             {
                 week: 6,
+                baby: {
+                    size: 'Ihr Baby ist etwa so groß wie eine Linse',
+                },
             },
             {
                 week: 7,
+                baby: {
+                    size: 'Ihr Baby ist etwa so groß wie eine Blaubeere',
+                },
             },
             {
-                week: 5,
+                week: 8,
+                baby: {
+                    length: 1.6,
+                    weight: 0.02,
+                    size: 'Ihr Baby ist etwa so groß wie eine Kidneybohne',
+                },
             },
             {
                 week: 9,
+                baby: {
+                    length: 2.3,
+                    weight: 0.03,
+                    size: 'Ihr Baby ist etwa so groß wie eine Weintraube',
+                },
             },
             {
                 week: 10,
+                baby: {
+                    length: 3.1,
+                    weight: 0.04,
+                    size: 'Ihr Baby ist etwa so groß wie eine Kumquat',
+                },
             },
             {
                 week: 11,
+                baby: {
+                    length: 4.1,
+                    weight: 0.05,
+                    size: 'Ihr Baby ist etwa so groß wie eine Feige',
+                },
             },
             {
                 week: 12,
+                baby: {
+                    length: 5.4,
+                    weight: 0.06,
+                    size: 'Ihr Baby ist etwa so groß wie eine Limette',
+                },
             },
             {
                 week: 13,
+                baby: {
+                    length: 6.7,
+                    weight: 0.07,
+                    size: 'Ihr Baby ist etwa so groß wie eine Erbsenschote',
+                },
             },
         ],
     },
@@ -50,12 +183,27 @@ export const Timeline = [
         weeks: [
             {
                 week: 14,
+                baby: {
+                    length: 14.7,
+                    weight: 0.09,
+                    size: 'Ihr Baby ist etwa so groß wie eine Zitrone',
+                },
             },
             {
                 week: 15,
+                baby: {
+                    length: 16.7,
+                    weight: 0.12,
+                    size: 'Ihr Baby ist etwa so groß wie ein Apfel',
+                },
             },
             {
                 week: 16,
+                baby: {
+                    length: 18.6,
+                    weight: 0.15,
+                    size: 'Ihr Baby ist etwa so groß wie eine Avocado',
+                },
             },
             {
                 week: 17,
@@ -217,15 +365,35 @@ export const Timeline = [
             },
             {
                 week: 19,
+                baby: {
+                    length: 24,
+                    weight: 0.27,
+                    size: 'Ihr Baby ist etwa so groß wie eine alte Tomate',
+                },
             },
             {
                 week: 20,
+                baby: {
+                    length: 25.7,
+                    weight: 0.33,
+                    size: 'Ihr Baby ist etwa so groß wie eine Banane',
+                },
             },
             {
                 week: 21,
+                baby: {
+                    length: 27.4,
+                    weight: 0.4,
+                    size: 'Ihr Baby ist etwa so groß wie eine Karotte',
+                },
             },
             {
                 week: 22,
+                baby: {
+                    length: 29,
+                    weight: 0.48,
+                    size: 'Ihr Baby ist etwa so groß wie ein Spaghettikürbis',
+                },
             },
             {
                 week: 23,
@@ -275,42 +443,113 @@ export const Timeline = [
         weeks: [
             {
                 week: 28,
+                baby: {
+                    length: 37.6,
+                    weight: 1.21,
+                    size: 'Ihr Baby ist etwa so groß wie eine große Aubergine',
+                },
             },
             {
                 week: 29,
+                baby: {
+                    length: 39.3,
+                    weight: 1.38,
+                    size: 'Ihr Baby ist etwa so groß wie ein Butternusskürbis',
+                },
             },
             {
                 week: 30,
+                baby: {
+                    length: 40.5,
+                    weight: 1.56,
+                    size: 'Ihr Baby ist etwa so groß wie ein großer Kohlkopf',
+                },
             },
             {
                 week: 31,
+                baby: {
+                    length: 41.8,
+                    weight: 1.75,
+                    size: 'Ihr Baby ist etwa so groß wie eine Kokosnuss',
+                },
             },
             {
                 week: 32,
+                baby: {
+                    length: 43,
+                    weight: 1.95,
+                    size: 'Ihr Baby ist etwa so groß wie eine Jicama',
+                },
             },
             {
                 week: 33,
+                baby: {
+                    length: 44.1,
+                    weight: 2.16,
+                    size: 'Ihr Baby ist etwa so groß wie eine Ananas',
+                },
             },
             {
                 week: 34,
+                baby: {
+                    length: 45.3,
+                    weight: 2.38,
+                    size: 'Ihr Baby ist etwa so groß wie eine Melone',
+                },
             },
             {
                 week: 35,
+                baby: {
+                    length: 46.3,
+                    weight: 2.59,
+                    size: 'Ihr Baby ist etwa so groß wie eine Honigmelone',
+                },
             },
             {
                 week: 36,
+                baby: {
+                    length: 47.3,
+                    weight: 2.81,
+                    size: 'Ihr Baby ist etwa so groß wie ein Römersalatkopf',
+                },
             },
             {
                 week: 37,
+                baby: {
+                    length: 48.3,
+                    weight: 3.03,
+                    size: 'Ihr Baby ist etwa so groß wie ein Bund Mangold',
+                },
             },
             {
                 week: 38,
+                baby: {
+                    length: 49.3,
+                    weight: 3.23,
+                    size: 'Ihr Baby ist etwa so groß wie ein Lauch',
+                },
             },
             {
                 week: 39,
+                baby: {
+                    length: 50.1,
+                    weight: 3.43,
+                    size: 'Ihr Baby ist etwa so groß wie eine kleine Wassermelone',
+                },
             },
             {
                 week: 40,
+                baby: {
+                    length: 51,
+                    weight: 3.62,
+                    size: 'Ihr Baby ist etwa so groß wie eine kleiner Kürbis',
+                },
+            },
+            {
+                week: 41,
+                baby: {
+                    size: 'Fast geschafft!',
+                },
             },
         ],
     },

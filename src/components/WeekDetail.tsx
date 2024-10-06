@@ -5,7 +5,7 @@ import { Progress } from './ui/progress'
 
 const WeekDetail = () => {
     const timeline = Timeline
-    const weeksOfPregnancy = 40
+    const weeksOfPregnancy = 41
     const { week } = useParams()
 
     const details = timeline
@@ -16,15 +16,17 @@ const WeekDetail = () => {
     const progress = (Number(week) * 100) / weeksOfPregnancy
 
     return (
-        <div className="flex flex-col">
-            <div className="card flex flex-col items-center">
+        <div className="flex flex-col w-80">
+            <div className="card flex flex-col items-center w-full">
                 <Progress value={progress} className="bg-white" />
                 {week && (
                     <div className="flex flex-row items-center w-full">
                         <span className="flex-none">
                             {Number(week) - 1 >= 1 && (
                                 <Link to={`/week/${Number(week) - 1}`}>
-                                    &lArr;
+                                    <span className="flex text-blue-500 pt-2">
+                                        {Number(week) - 1}.
+                                    </span>
                                 </Link>
                             )}
                         </span>
@@ -34,7 +36,9 @@ const WeekDetail = () => {
                         <span className="flex-none">
                             {Number(week) + 1 <= weeksOfPregnancy && (
                                 <Link to={`/week/${Number(week) + 1}`}>
-                                    &rArr;
+                                    <span className="flex text-blue-500 pt-2">
+                                        {Number(week) + 1}.
+                                    </span>
                                 </Link>
                             )}
                         </span>
@@ -43,53 +47,51 @@ const WeekDetail = () => {
             </div>
 
             <Tabs defaultValue="baby" className="w-full">
-                <TabsList className="flex flex-row justify-center">
+                <TabsList className="flex flex-row mx-2 justify-center">
                     <TabsTrigger
                         value="baby"
-                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
+                        className="flex flex-col basis-1 grow bg-gray-50 p-1 px-3 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
-                        <img src={`/icons/baby.svg`} alt="" width="35" />
+                        <img src={`/icons/baby.svg`} alt="" width="30" />
                         <span className="text-sm">Baby</span>
                     </TabsTrigger>
                     <TabsTrigger
                         value="highlights"
-                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
+                        className="flex flex-col basis-1 grow bg-gray-50 p-1 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
                         <img src={`/icons/highlights.svg`} alt="" width="45" />
                         <span className="text-sm">Highlights</span>
                     </TabsTrigger>
                     <TabsTrigger
                         value="symptoms"
-                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
+                        className="flex flex-col basis-1 grow bg-gray-50 p-1 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
                         <img src={`/icons/symptoms.svg`} alt="" width="45" />
                         <span className="text-sm">Symptome</span>
                     </TabsTrigger>
                     <TabsTrigger
                         value="checklist"
-                        className="flex flex-col bg-gray-50 p-2 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
+                        className="flex flex-col basis-1 grow bg-gray-50 p-1 mx-1 transition-colors hover:bg-gray-100 items-center justify-end"
                     >
                         <img src={`/icons/checklist.svg`} alt="" width="30" />
                         <span className="text-sm">Checkliste</span>
                     </TabsTrigger>
                 </TabsList>
 
-                {details?.baby && (
-                    <TabsContent value="baby">
-                        <div className="card flex flex-col items-center">
-                            {details?.baby && (
-                                <>
-                                    <div className="flex flex-col items-center gap-4">
-                                        {details?.baby.size}
-                                        <img
-                                            src={`/size/${week}.svg`}
-                                            alt=""
-                                            width="150"
-                                            className="mb-4"
-                                        />
-                                    </div>
+                <TabsContent value="baby">
+                    <div className="card flex flex-col items-center">
+                        <img src={`/size/${week}.svg`} alt="" width="150" />
 
-                                    <div className="flex flex-row w-full">
+                        {details?.baby && (
+                            <>
+                                {details?.baby.size && (
+                                    <div className="flex flex-col items-center my-5">
+                                        {details?.baby.size}
+                                    </div>
+                                )}
+
+                                <div className="flex flex-row w-full">
+                                    {details?.baby.length && (
                                         <div className="flex flex-col grow items-center justify-end">
                                             <img
                                                 src={`/icons/ruler.svg`}
@@ -99,7 +101,9 @@ const WeekDetail = () => {
                                             <strong>Größe:</strong>{' '}
                                             {details?.baby.length} cm
                                         </div>
+                                    )}
 
+                                    {details?.baby.weight && (
                                         <div className="flex flex-col grow items-center justify-end">
                                             <img
                                                 src={`/icons/scale.svg`}
@@ -109,12 +113,12 @@ const WeekDetail = () => {
                                             <strong>Gewicht:</strong>{' '}
                                             {details?.baby.weight} kg
                                         </div>
-                                    </div>
-                                </>
-                            )}
-                        </div>
-                    </TabsContent>
-                )}
+                                    )}
+                                </div>
+                            </>
+                        )}
+                    </div>
+                </TabsContent>
 
                 {details?.highlights && (
                     <TabsContent value="highlights">
