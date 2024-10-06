@@ -1,5 +1,5 @@
 import { Timeline } from '@/service/data'
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@radix-ui/react-tabs'
+import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
 import { useParams } from 'react-router-dom'
 import WeekNavigation from './WeekNavigation'
 import TabItems from './TabItems'
