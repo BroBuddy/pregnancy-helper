@@ -6,6 +6,41 @@ const weightTable: number[][] = [
     [325, 475],
 ]
 
+const compositions: any[] = [
+    {
+        title: 'Gewicht des Babys',
+        text: 'ca. 3 – 3,8 kg',
+    },
+    {
+        title: 'Blutvolumens',
+        text: 'ca. 1,2 kg',
+    },
+    {
+        title: 'Gebärmutter',
+        text: 'ca. 1,3 kg',
+    },
+    {
+        title: 'Plazenta',
+        text: 'ca. 0,6 – 0,8 kg',
+    },
+    {
+        title: 'Fruchtwasser',
+        text: '	ca. 1,3 kg',
+    },
+    {
+        title: 'Gewebsflüssigkeit',
+        text: '	ca. 2 – 2,5 kg',
+    },
+    {
+        title: 'Brustdrüsengewebes',
+        text: 'ca. 0,8 – 1,0 kg',
+    },
+    {
+        title: 'Depotfett',
+        text: 'ca. 1,7 kg',
+    },
+]
+
 const WeightGain = () => {
     const [startWeight, setStartWeight] = useState<number>(55000)
     const [weekWeight, setWeekWeight] = useState<number[][]>([])
@@ -102,6 +137,25 @@ const WeightGain = () => {
 
                             {(index + 1 === 13 || index + 1 === 27) && <br />}
                         </React.Fragment>
+                    )
+                })}
+            </div>
+
+            <div className="card">
+                <h2>Zusammensetzung</h2>
+
+                {compositions.map((composition: any, index: number) => {
+                    return (
+                        <div
+                            key={index}
+                            className="flex flex-row justify-between mx-2"
+                        >
+                            <strong className="text-white">
+                                {composition.title}
+                            </strong>
+
+                            <span className="text-sm">{composition.text}</span>
+                        </div>
                     )
                 })}
             </div>
