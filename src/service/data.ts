@@ -207,6 +207,11 @@ export const Timeline = [
             },
             {
                 week: 17,
+                baby: {
+                    length: 20.4,
+                    weight: 0.18,
+                    size: 'Ihr Baby ist etwa so groß wie eine Rübe',
+                },
                 highlights: [
                     {
                         name: 'Ihr Baby kann Sie hören',
@@ -224,11 +229,6 @@ export const Timeline = [
                             'Stellen Sie sicher, dass Sie Fotos von Ihrem schönen schwangeren Ich machen. Egal, ob Sie einen professionellen Fotografen, einen Freund oder Ihren Partner fotografieren lassen, hier finden Sie einige tolle Ideen für Schwangerschaftsfotos.',
                     },
                 ],
-                baby: {
-                    length: 20.4,
-                    weight: 0.18,
-                    size: 'Ihr Baby ist etwa so groß wie eine Rübe',
-                },
                 symptoms: [
                     {
                         name: 'Schwindel',
@@ -286,6 +286,11 @@ export const Timeline = [
             },
             {
                 week: 18,
+                baby: {
+                    length: 22.2,
+                    weight: 0.22,
+                    size: 'Ihr Baby ist etwa so groß wie eine Paprika',
+                },
                 highlights: [
                     {
                         name: 'Ultraschall in der Mitte der Schwangerschaft',
@@ -303,11 +308,6 @@ export const Timeline = [
                             'Experten empfehlen, im zweiten Trimester etwa 340 zusätzliche Kalorien pro Tag zu sich zu nehmen. Der Verzehr gesunder Snacks zwischen den Mahlzeiten wird Ihnen helfen, dieses Ziel zu erreichen und Ihren Blutzuckerspiegel aufrechtzuerhalten, damit Sie nicht zu hungrig werden.',
                     },
                 ],
-                baby: {
-                    length: 22.2,
-                    weight: 0.22,
-                    size: 'Ihr Baby ist etwa so groß wie eine Paprika',
-                },
                 symptoms: [
                     {
                         name: 'Erhöhter Appetit',
@@ -365,6 +365,11 @@ export const Timeline = [
             },
             {
                 week: 19,
+                baby: {
+                    length: 24,
+                    weight: 0.27,
+                    size: 'Ihr Baby ist etwa so groß wie eine alte Tomate',
+                },
                 highlights: [
                     {
                         name: 'Regenbogenbabys',
@@ -382,11 +387,6 @@ export const Timeline = [
                             'Schauen Sie sich zur Inspiration diese Babynamen an, die von der Natur, dem Weltraum und der Liebe inspiriert sind.',
                     },
                 ],
-                baby: {
-                    length: 24,
-                    weight: 0.27,
-                    size: 'Ihr Baby ist etwa so groß wie eine alte Tomate',
-                },
                 symptoms: [
                     {
                         name: 'Schmerzen im Rundband',
@@ -449,6 +449,67 @@ export const Timeline = [
                     weight: 0.33,
                     size: 'Ihr Baby ist etwa so groß wie eine Banane',
                 },
+                highlights: [
+                    {
+                        name: 'Du hast die Hälfte geschafft!',
+                        description:
+                            'Sie befinden sich in der Mitte Ihrer Schwangerschaft – oder vielleicht etwas mehr oder weniger. Die meisten Frauen gebären nicht genau zum Geburtstermin. Es ist genauso wahrscheinlich, dass die Wehen in den zwei Wochen davor oder danach einsetzen.',
+                    },
+                    {
+                        name: 'Fundamenthöhe',
+                        description:
+                            'Von nun an wird Ihr Arzt oder Ihre Hebamme bei jedem vorgeburtlichen Besuch Ihren Bauch vom Schambein bis zur Oberseite Ihrer Gebärmutter vermessen. Diese Messung der „Grundhöhe“ zeigt, wie Ihr Baby wächst. Ab der 24. Woche entspricht die Körpergröße in Zentimetern etwa der Anzahl der Wochen, in denen Sie schwanger sind.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Juckende Haut',
+                        description:
+                            'Möglicherweise verspüren Sie einen besonders starken Juckreiz im Bauch- und Brustbereich, da sich Ihre Haut ausdehnt, um sich an Ihr heranwachsendes Baby anzupassen. Viele werdende Mütter leiden irgendwann unter juckender Haut. Verwenden Sie zur Linderung Kühlpackungen und tragen Sie eine Feuchtigkeitscreme auf. (Kratzen kann den Juckreiz verschlimmern!) Holen Sie sich weitere Tipps zur Linderung des Juckreizes und finden Sie heraus, wann juckende Haut auf ein Problem hinweisen könnte.',
+                    },
+                    {
+                        name: 'Unruhiger Schlaf',
+                        description:
+                            'Bewegen Sie sich die ganze Nacht hin und her und versuchen, eine bequeme Schlafposition zu finden? Diese Vorschläge können hilfreich sein: Legen Sie sich mit angewinkelten Knien und einem Kissen zwischen den Beinen auf die Seite. Platzieren Sie für zusätzlichen Komfort und Halt weitere Kissen unter Ihrem Bauch und hinter Ihrem Rücken. Sie können auch versuchen, ein Schwangerschaftskissen zu verwenden.',
+                    },
+                    {
+                        name: 'Haar- und Nagelveränderungen',
+                        description:
+                            'Endlich ein paar erfreuliche Schwangerschaftssymptome! Möglicherweise bemerken Sie zu diesem Zeitpunkt, dass Sie längere Nägel und dickeres Haar haben. Während der Schwangerschaft werden die Haare oft dicker – nicht weil Sie mehr wachsen, sondern weil Östrogen die Wachstumsphase verlängert. Grundsätzlich verlieren Sie weniger Haare. Alle Haare, die Sie während der Schwangerschaft nicht verloren haben, beginnen etwa drei bis fünf Monate nach der Entbindung auszufallen. Es ist normal, aber Haarausfall nach der Geburt kann überraschend sein. Außerdem wachsen Ihre Nägel jetzt schneller als sonst und sehen möglicherweise anders aus. Einige werdende Mütter haben härtere Nägel, während andere feststellen, dass ihre Nägel weicher oder brüchiger sind.',
+                    },
+                    {
+                        name: 'Schmerzen im unteren Rücken',
+                        description:
+                            'Während der Schwangerschaft werden Sie wahrscheinlich Schmerzen im unteren Rückenbereich verspüren. Ihre wachsende Gebärmutter belastet Ihren Rücken und das zusätzliche Gewicht, das Sie tragen, lässt Ihre Muskeln härter arbeiten. Außerdem beeinträchtigen Ihre Hormone die Stabilität Ihrer Gelenke und Bänder. Einige Übungen können dabei helfen, Schmerzen im unteren Rückenbereich vorzubeugen: Krafttraining kann dabei helfen, Ihre Rumpfmuskulatur zu stärken, Dehnungsübungen erhöhen die Flexibilität der Muskeln, die Ihren Rücken und Ihre Beine stützen, und Schwimmen stärkt nicht nur Ihren Körper, sondern entlastet auch Ihre Gelenke und Bänder. Um mit Schmerzen im unteren Rücken umzugehen, versuchen Sie es mit einer vorgeburtlichen Massage, der Anwendung von Wärme oder Kälte und dem Erlernen von Entspannungstechniken.',
+                    },
+                    {
+                        name: 'Verstopfung',
+                        description:
+                            'Verstopfung während der Schwangerschaft kommt häufig vor und wird durch Hormonveränderungen, verminderte Aktivität und eine sich ausdehnende Gebärmutter verursacht. Verstopfung kann auch andere Probleme verursachen. Eine der häufigsten Erkrankungen sind Hämorrhoiden, bei denen es sich um geschwollene Venen im Rektum und Anus handelt. Um Verstopfung zu lindern, trinken Sie viel Wasser, essen Sie ballaststoffreiche Lebensmittel wie Vollkornprodukte, treiben Sie regelmäßig Sport und sprechen Sie mit Ihrem Arzt. Sie können Ihnen raten, einen Stuhlweichmacher zu verwenden, Magnesium einzunehmen oder vorgeburtliche Vitamine auf ein Vitamin mit weniger Eisen umzustellen.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Suchen Sie einen Kinderarzt auf',
+                        description:
+                            'In den ersten Jahren werden Sie häufig den Arzt Ihres Babys aufsuchen. Holen Sie sich einige Tipps zur Auswahl eines Arztes für Ihr Baby und stellen Sie sicher, dass Sie jemanden auswählen, zu dem Sie eine echte Verbindung haben. Sie können Ihren Gynäkologen oder Ihre Hebamme, Freunde und Verwandte um Empfehlungen bitten; Überprüfen Sie dann, wer durch Ihre Versicherung abgedeckt ist und sich in der Nähe befindet. Versuchen Sie, Ihre Top-Kandidaten persönlich zu treffen – es könnte eine Gebühr anfallen, die jedoch von der Versicherung übernommen werden kann.',
+                    },
+                    {
+                        name: 'Gönnen Sie sich etwas',
+                        description:
+                            'Sie haben die Hälfte Ihrer Schwangerschaft hinter sich, also feiern Sie! Wie wäre es zu diesem Anlass mit einer Gesichtsbehandlung, einer Schwangerschaftsmassage oder einem Schwangerschaftsfotoshooting? Wenn Sie keine Lust haben, Geld auszugeben, tun Sie etwas Schönes für sich selbst, wie zum Beispiel Bücher aus der Bibliothek zu holen, einen schönen Spaziergang zu machen oder ein Schaumbad zu nehmen.',
+                    },
+                    {
+                        name: 'Experimentieren Sie im Bett',
+                        description:
+                            'In der 20. Schwangerschaftswoche stellen einige werdende Mütter fest, dass sie aufgrund der erhöhten Durchblutung und Gleitfähigkeit einen höheren Sexualtrieb und bessere Orgasmen haben. Für die meisten Frauen ist Sex während der Schwangerschaft völlig sicher und wohltuend – er hilft Ihnen, aktiv zu bleiben, schüttet Hormone aus, die Sie glücklich und entspannt machen, und ermöglicht eine enge Bindung zu Ihrem Partner. Wenn Ihr Bauch anfängt, Ihnen im Weg zu stehen, experimentieren Sie mit Schwangerschafts-Sexpositionen, die Ihrem Bauch entgegenkommen.',
+                    },
+                    {
+                        name: 'Gedanken aufschreiben',
+                        description:
+                            'Wenn Sie sich gestresst fühlen oder Probleme beim Einschlafen haben, weil Ihre Gedanken rasen, versuchen Sie, alles, was Sie stört, in einem Tagebuch aufzuschreiben. Machen Sie sich keine Sorgen darüber, dass es ordentlich oder gut geschrieben ist. Das Wichtigste ist, die Sorgen aus dem Kopf zu bekommen und auf die Seite zu bringen.',
+                    },
+                ],
             },
             {
                 week: 21,
@@ -457,6 +518,82 @@ export const Timeline = [
                     weight: 0.4,
                     size: 'Ihr Baby ist etwa so groß wie eine Karotte',
                 },
+                highlights: [
+                    {
+                        name: 'Babytritte',
+                        description:
+                            'Schon bald können andere Menschen vielleicht spüren, wie sich Ihr Baby bewegt, indem sie eine Hand auf Ihren Bauch legen. Die anfänglichen Flatterbewegungen Ihres Babys werden zu vollwertigen Tritten und Stupsern.',
+                    },
+                    {
+                        name: 'Eine Doula engagieren',
+                        description:
+                            'Eine Doula ist eine ausgebildete Wehen- und Geburtshelferin, die Sie bei der Geburt Ihres Babys unterstützen kann. Wenn Sie auf der Suche nach einer Doula sind, beginnen Sie bald mit Vorstellungsgesprächen mit Kandidaten.',
+                    },
+                    {
+                        name: 'Schwimmen während der Schwangerschaft',
+                        description:
+                            'Schwimmen ist eine der besten Übungen für werdende Mütter. Es ist schonend und sanft zu Ihrem Körper und kann helfen, Schwangerschaftsbeschwerden zu lindern. Wenn Ihr Bauch größer wird, ist es besonders schön, schwerelos im Wasser zu schweben.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Krampfadern',
+                        description:
+                            'Sie sind jetzt anfälliger für Krampfadern. Mit fortschreitender Schwangerschaft übt das Gewicht Ihrer Gebärmutter einen zunehmenden Druck auf die Venen in Ihren Beinen aus. Ein höherer Progesteronspiegel, der zu einer Entspannung der Venenwände führen kann, kann das Problem verschlimmern. Minimieren Sie Krampfadern, indem Sie täglich Sport treiben, das empfohlene Schwangerschaftsgewicht zunehmen, Ihre Füße auf Herzhöhe oder höher lagern, beim Sitzen keine Beine oder Knöchel überschlagen und nicht längere Zeit stehen oder sitzen, ohne sich zu bewegen. Auch das Tragen von Kompressionsstrümpfen kann helfen, indem es die Durchblutung Ihrer Beine steigert.',
+                    },
+                    {
+                        name: 'Zahnfleischbluten',
+                        description:
+                            'Etwa die Hälfte der werdenden Mütter erkranken an einer Schwangerschaftsgingivitis – entzündetem Zahnfleisch, das beim Zähneputzen oder bei der Verwendung von Zahnseide blutet. Es ist unwahrscheinlich, dass es Ihrem Baby schadet oder Ihre Schwangerschaft anderweitig beeinträchtigt, es sei denn, Sie leiden an einer schweren Zahnfleischerkrankung, die mit einigen Komplikationen verbunden ist. Achten Sie auf eine gute Mundhygiene, indem Sie zweimal täglich die Zähne putzen und täglich Zahnseide verwenden. Es ist sicher, während der Schwangerschaft zum Zahnarzt zu gehen – tatsächlich ist es besonders wichtig, regelmäßige Kontrolluntersuchungen, Zahnreinigungen und alle notwendigen Behandlungen durchzuführen.',
+                    },
+                    {
+                        name: 'Ungeschicklichkeit',
+                        description:
+                            'Fühlen Sie sich etwas unausgeglichen oder ungeschickt? Wenn Ihr Bauch wächst, verändert sich Ihr Schwerpunkt, sodass Sie gelegentlich das Gefühl haben, auf Ihren Füßen etwas unsicher zu sein. Vermeiden Sie Situationen mit hohem Sturzrisiko; Ein Trauma an Ihrem Bauch könnte für Sie und Ihr Baby gefährlich sein. Gehen Sie langsamer vor, vermeiden Sie riskante Aufgaben (z. B. das Besteigen einer Leiter zum Auswechseln einer Glühbirne), tragen Sie Schuhe mit niedrigen Absätzen und gehen Sie auf unebenen, nassen oder vereisten Oberflächen besonders vorsichtig.',
+                    },
+                    {
+                        name: 'Braxton-Hicks-Kontraktionen',
+                        description:
+                            'Bei Braxton-Hicks handelt es sich um „übliche“ Uteruskontraktionen, die meist selten, unregelmäßig und schmerzlos sind. Sie beginnen früh in der Schwangerschaft, aber Sie werden sie wahrscheinlich erst in der 21. Woche spüren. (Manche Frauen bemerken sie nie, und das ist auch in Ordnung.) Am häufigsten treten Braxton-Hicks-Kontraktionen am Ende des Tages auf, wenn Sie dehydriert sind oder eine volle Blase haben, oder während oder nach körperlichen Aktivitäten, einschließlich Sex. Braxton-Hicks sind harmlos, es kann jedoch schwierig sein, sie von vorzeitigen Wehen zu unterscheiden. Wenn Sie regelmäßige Wehen haben oder Anzeichen einer vorzeitigen Wehentätigkeit haben, rufen Sie sofort Ihren Arzt oder Ihre Hebamme an.',
+                    },
+                    {
+                        name: 'Sodbrennen',
+                        description:
+                            'Sodbrennen ist ein brennendes Gefühl, das sich oft von der Unterseite des Brustbeins bis in den unteren Rachenraum ausbreitet. Aufgrund hormoneller und körperlicher Veränderungen kommt es während der Schwangerschaft häufig vor. Viele Frauen verspüren während der Schwangerschaft zum ersten Mal Sodbrennen, und obwohl es im Allgemeinen harmlos ist, kann es recht unangenehm sein. Um Linderung zu erzielen, schauen Sie sich diese Möglichkeiten zur Vorbeugung und Minimierung von Sodbrennen während der Schwangerschaft an.',
+                    },
+                    {
+                        name: 'Gewichtszunahme',
+                        description:
+                            'Zu diesem Zeitpunkt der Schwangerschaft nehmen Sie möglicherweise etwa ein Pfund pro Woche zu. Um zu erfahren, was eine gesunde Gewichtszunahme während der Schwangerschaft für Sie bedeutet, sprechen Sie mit Ihrem Arzt oder Ihrer Hebamme und verwenden Sie unseren Gewichtszunahme-Rechner in der Schwangerschaft. Bedenken Sie, dass Richtlinien nicht in Stein gemeißelt sind. Ihre angestrebte Gewichtszunahme hängt von Ihren Gesundheitsbedürfnissen ab. Und wenn Sie übergewichtig, fettleibig oder untergewichtig sind, ist es besonders wichtig, eine individuelle Herangehensweise an die Gewichtszunahme während der Schwangerschaft zu haben.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Überprüfen Sie Ihre Ringe',
+                        description:
+                            'Im Laufe der Woche kommt es häufig zu einer schwangerschaftsbedingten Schwellung der Finger. Wenn sich Ihre Ringe fest anfühlen, tun Sie sich selbst einen Gefallen und nehmen Sie sie jetzt ab, bevor sie hängen bleiben. Vielleicht möchten Sie sie an einer Kette in der Nähe Ihres Herzens tragen. (Hinweis: Wenn Ihre Hände mehr als mäßig geschwollen sind, wenden Sie sich an Ihren Arzt.)',
+                    },
+                    {
+                        name: 'Vermeiden Sie unsichere Aktivitäten',
+                        description:
+                            'Wenn Ihr Bauch wächst, ist es wichtig, unsichere Aktivitäten zu vermeiden, bei denen ein hohes Risiko für Stürze oder andere Gefahren besteht. Dazu gehören Tauchen, Kontaktsportarten, Snowboarden, Skifahren, Hot Yoga, Reiten, Whirlpools, Vierräder, Wasserrutschen und einige Fahrgeschäfte im Vergnügungspark.',
+                    },
+                    {
+                        name: 'Überprüfen Sie Ihre Finanzen',
+                        description:
+                            'Die Aufnahme eines neuen Mitglieds in die Familie verändert alles, auch Ihre Finanzen. Wenn Sie sich die Zeit nehmen, Ihr Budget umzugestalten, um Platz für Ihr Baby zu schaffen, können Sie Ihren Stresspegel senken und sich sicherer fühlen. Auch wenn es wahrscheinlich nicht das Verlockendste auf Ihrer To-Do-Liste ist, ist es klug, sich lieber früher als später mit den großen finanziellen Fragen in Bezug auf Versicherungen, Steuern, Testamente und Kinderbetreuung auseinanderzusetzen.',
+                    },
+                    {
+                        name: 'Erstellen Sie Ihr Babyregister',
+                        description:
+                            'Wenn Sie noch kein Babyregister erstellt haben, ist jetzt ein guter Zeitpunkt. Sie werden viele Babyprodukte für Ihr Kleines benötigen, daher ist es wunderbar, wenn Freunde und Familie mithelfen.',
+                    },
+                    {
+                        name: 'Beruhigen Sie Ihren Stress',
+                        description:
+                            'Jeder hat in seinem Leben Stress, aber wenn er dauerhaft oder überwältigend ist, kann er Probleme verursachen. Einige Studien haben chronischen Stress während der Schwangerschaft mit Frühgeburten, Präeklampsie und niedrigem Geburtsgewicht in Verbindung gebracht. Um Stress abzubauen, versuchen Sie, Sport zu treiben, Freunde und Familie um Unterstützung zu bitten und Achtsamkeitstechniken zu üben. Wenn Ihr Stress überwältigend wird, sprechen Sie mit Ihrem Arzt und erwägen Sie, die Hilfe eines Therapeuten in Anspruch zu nehmen.',
+                    },
+                ],
             },
             {
                 week: 22,
