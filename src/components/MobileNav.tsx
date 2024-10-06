@@ -14,7 +14,7 @@ const MobileNav = () => {
             </Link>
 
             <Link to="/weight-gain">
-                <img src="/icons/scale.svg" alt="" width={30} />
+                <img src="/icons/weight.svg" alt="" width={30} />
                 <span className="text-xs">Gewicht</span>
             </Link>
         </section>

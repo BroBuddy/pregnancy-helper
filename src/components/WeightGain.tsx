@@ -89,7 +89,7 @@ const WeightGain = () => {
     return (
         <section className="flex flex-col py-2 w-80">
             <div className="card">
-                <h2>Gewichtszunahme</h2>
+                <h2>Gewichtszunahme der Mama</h2>
 
                 <p className="text-sm">
                     Normalgewichtige Frauen legen im Laufe der Schwangerschaft
@@ -104,8 +104,27 @@ const WeightGain = () => {
             </div>
 
             <div className="card">
+                <h2>Zusammensetzung</h2>
+
+                {compositions.map((composition: any, index: number) => {
+                    return (
+                        <div
+                            key={index}
+                            className="flex flex-row justify-between mx-2"
+                        >
+                            <strong className="text-white">
+                                {composition.title}
+                            </strong>
+
+                            <span className="text-sm">{composition.text}</span>
+                        </div>
+                    )
+                })}
+            </div>
+
+            <div className="card">
                 <div className="flex flex-col items-center">
-                    <h2>Startgewicht</h2>
+                    <h2>Startgewicht der Mama</h2>
 
                     <select
                         defaultValue={defaultWeight}
@@ -127,7 +146,7 @@ const WeightGain = () => {
                         <React.Fragment key={index}>
                             <div className="flex flex-row justify-between mx-10">
                                 <strong className="text-white">
-                                    {index + 1}. Woche:
+                                    {index + 1}. Woche
                                 </strong>
 
                                 <span className="text-sm">
@@ -137,25 +156,6 @@ const WeightGain = () => {
 
                             {(index + 1 === 13 || index + 1 === 27) && <br />}
                         </React.Fragment>
-                    )
-                })}
-            </div>
-
-            <div className="card">
-                <h2>Zusammensetzung</h2>
-
-                {compositions.map((composition: any, index: number) => {
-                    return (
-                        <div
-                            key={index}
-                            className="flex flex-row justify-between mx-2"
-                        >
-                            <strong className="text-white">
-                                {composition.title}
-                            </strong>
-
-                            <span className="text-sm">{composition.text}</span>
-                        </div>
                     )
                 })}
             </div>

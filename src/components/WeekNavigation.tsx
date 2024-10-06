@@ -16,24 +16,28 @@ const WeekNavigation = ({
 
             {week && (
                 <div className="flex flex-row items-center w-full">
-                    <span className="flex-none">
+                    <span className="flex-none mt-3">
                         {Number(week) - 1 >= 1 && (
                             <Link to={`/week/${week - 1}`}>
-                                <span className="flex text-blue-500 pt-2">
-                                    {Number(week) - 1}.
-                                </span>
+                                <img
+                                    src={`/size/${week - 1}.svg`}
+                                    alt=""
+                                    width="30"
+                                />
                             </Link>
                         )}
                     </span>
 
                     <h2 className="grow mt-5">{week}. Woche</h2>
 
-                    <span className="flex-none">
+                    <span className="flex-none mt-3">
                         {Number(week) + 1 <= weeksOfPregnancy && (
                             <Link to={`/week/${week + 1}`}>
-                                <span className="flex text-blue-500 pt-2">
-                                    {Number(week) + 1}.
-                                </span>
+                                <img
+                                    src={`/size/${week + 1}.svg`}
+                                    alt=""
+                                    width="30"
+                                />
                             </Link>
                         )}
                     </span>

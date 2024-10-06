@@ -35,6 +35,10 @@ body {
     border-top: 1px solid #fff;
 }
 
+.mobile-nav a:hover {
+    color: #007bbd;
+}
+
 .mobile-nav > a {
     display: flex;
     flex-direction: column;

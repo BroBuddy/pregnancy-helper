@@ -12,25 +12,25 @@ const BabyDetail = ({
             {baby && (
                 <>
                     {baby.size && (
-                        <div className="flex flex-col items-center my-5">
+                        <div className="flex flex-col items-center text-sm my-5">
                             {baby.size}
                         </div>
                     )}
 
                     <div className="flex flex-row w-full">
                         {baby.length && (
-                            <div className="flex flex-col grow items-center justify-end">
+                            <div className="flex flex-col grow text-sm items-center justify-end">
                                 <img
                                     src={`/icons/ruler.svg`}
                                     alt=""
-                                    width="40"
+                                    width="45"
                                 />
                                 <strong>Größe:</strong> {baby.length} cm
                             </div>
                         )}
 
                         {baby.weight && (
-                            <div className="flex flex-col grow items-center justify-end">
+                            <div className="flex flex-col grow text-sm items-center justify-end">
                                 <img
                                     src={`/icons/scale.svg`}
                                     alt=""

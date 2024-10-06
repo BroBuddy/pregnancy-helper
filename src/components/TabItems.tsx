@@ -9,10 +9,10 @@ const TabItems = ({
                 return (
                     <div
                         key={index}
-                        className="flex flex-col items-center gap-4"
+                        className="flex flex-col text-sm items-center gap-3"
                     >
-                        <h2>{item.name}</h2>
-                        <p className="mb-5">{item.description}</p>
+                        <strong>{item.name}</strong>
+                        <p className="mb-3">{item.description}</p>
                     </div>
                 )
             })}
