@@ -365,11 +365,82 @@ export const Timeline = [
             },
             {
                 week: 19,
+                highlights: [
+                    {
+                        name: 'Regenbogenbabys',
+                        description:
+                            'Wenn Sie nach einem Verlust schwanger sind, können Sie mit gemischten Gefühlen wie Sorge, Aufregung, Angst und Freude zu kämpfen haben. Hier finden Sie Möglichkeiten, Ihr Erlebnis zu würdigen und Ihr Regenbogenbaby zu feiern.',
+                    },
+                    {
+                        name: 'Planung einer Babyparty',
+                        description:
+                            'Planen Sie eine Babyparty oder eine Babystreusel? Es ist noch nicht zu früh, mit dem Gastgeber über das Thema zu sprechen und darüber, wen man einladen möchte.',
+                    },
+                    {
+                        name: 'Ideen für Babynamen',
+                        description:
+                            'Schauen Sie sich zur Inspiration diese Babynamen an, die von der Natur, dem Weltraum und der Liebe inspiriert sind.',
+                    },
+                ],
                 baby: {
                     length: 24,
                     weight: 0.27,
                     size: 'Ihr Baby ist etwa so groß wie eine alte Tomate',
                 },
+                symptoms: [
+                    {
+                        name: 'Schmerzen im Rundband',
+                        description:
+                            'Wenn Ihre Gebärmutter wächst, dehnen und verdicken sich die Bänder, die sie mit Ihrem Becken verbinden. Dies kann einen scharfen, stechenden Schmerz verursachen, der als Rundbandschmerz bezeichnet wird. Das Gefühl könnte sich so anfühlen, als würde es tief in der Leistengegend beginnen und sich auf beiden Seiten nach oben und außen bis zum oberen Ende der Hüfte ausbreiten. Wenn Schmerzen im runden Band auftreten, halten Sie inne und ruhen Sie sich aus, wenn Sie können, und vermeiden Sie Bewegungen oder Positionen, die sie auslösen. Der Schmerz im Rundband ist kurzzeitig und sollte schnell nachlassen.',
+                    },
+                    {
+                        name: 'Bauchschmerzen',
+                        description:
+                            'Wenn Sie Bauchkrämpfe haben und diese nicht durch Ruhe verschwinden, rufen Sie Ihren Arzt oder Ihre Hebamme an. Rufen Sie auch an, wenn die Krämpfe starke Schmerzen verursachen oder von anderen Symptomen wie Fieber oder Schwindel begleitet werden. Ein weiteres Warnzeichen: Sie haben Schmerzen im Oberbauch oder Ihr Bauch reagiert ungewöhnlich empfindlich auf Berührungen, insbesondere wenn der Druck nachlässt (dies könnte auf eine Bauchinfektion hinweisen).',
+                    },
+                    {
+                        name: 'Hautveränderungen',
+                        description:
+                            'Sind Ihre Handflächen rot? Es kommt von zusätzlichem Östrogen. Möglicherweise haben Sie auch Flecken dunkler Haut auf Ihrer Oberlippe, Ihren Wangen und Ihrer Stirn – das nennt man Melasma oder die „Maske der Schwangerschaft“. Schwangerschaftshormone wirken auf die Zellen, die Melanin enthalten, was auch zu einer Verdunkelung Ihrer Brustwarzen, Sommersprossen, Narben, Achselhöhlen, Innenseiten der Oberschenkel und der Vulva führen kann. Außerdem werden Sie wahrscheinlich eine dunkle Linie sehen, die von Ihrem Bauchnabel bis zu Ihrem Schambein verläuft – das ist die Linea nigra oder „dunkle Linie“. Alle diese Pigmentveränderungen sollten nach der Schwangerschaft verschwinden.',
+                    },
+                    {
+                        name: 'Nasenbluten',
+                        description:
+                            'Jede fünfte schwangere Frau hat Nasenbluten. Aufgrund des erhöhten Blutvolumens kommt es während der Schwangerschaft dazu, dass sich die Blutgefäße in Ihrer Nase erweitern, wodurch diese platzen und häufiger bluten. Dies ist wahrscheinlicher, wenn Sie an einer Erkältung oder Allergien leiden oder sich in besonders trockener Luft aufhalten. Wenn Sie während der Schwangerschaft eine blutige Nase bekommen, setzen Sie sich hin, beugen Sie sich nach vorne und halten Sie dabei Ihren Kopf höher als Ihr Herz. Drücken Sie den unteren Teil Ihrer Nase 10 bis 15 Minuten lang mit Daumen und Zeigefinger zusammen und atmen Sie dabei durch den Mund. Sie können auch Kälte auf den Nasenrücken auftragen, um die Blutgefäße zu verengen und die Blutung zu verlangsamen.',
+                    },
+                    {
+                        name: 'Kurzatmigkeit',
+                        description:
+                            'Fühlen Sie sich in letzter Zeit außer Atem? Sie können es sich nicht vorstellen – Sie benötigen während der Schwangerschaft mehr Sauerstoff und Ihr Körper passt sich an, indem er mit jedem Atemzug mehr Luft ein- und ausatmet. Außerdem kann sich Ihre Atmung später in der Schwangerschaft schwerer anfühlen, da Ihre wachsende Gebärmutter Druck auf Ihr Zwerchfell ausübt. Wenn Sie atemlos sind, machen Sie eine Pause und ruhen Sie sich aus. Wenn Ihre Atemnot jedoch plötzlich oder schwerwiegend auftritt oder Sie andere beunruhigende Symptome wie einen schnellen oder unregelmäßigen Herzschlag haben, rufen Sie Ihren Arzt an. Wenn Sie sie nicht erreichen können, rufen Sie 911 an oder gehen Sie zur Notaufnahme.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Akzeptieren Sie Ihren Körpertyp während der Schwangerschaft',
+                        description:
+                            'Es ist möglich, süße Umstandsmode zu finden, die Ihrem Körpertyp schmeichelt, egal ob Sie zierlich, kurvig oder ob Sie hoch oder niedrig tragen. Der wichtigste Style-Tipp überhaupt: Sorgen Sie dafür, dass Sie sich wohl und selbstbewusst fühlen.',
+                    },
+                    {
+                        name: 'Denken Sie an die Kinderbetreuung',
+                        description:
+                            'Wenn Sie regelmäßig Betreuung für Ihr Baby benötigen, ist es sinnvoll, sich jetzt mit den Möglichkeiten der Kinderbetreuung zu befassen. Fragen Sie Freunde Ihrer Eltern vor Ort nach Empfehlungen und suchen Sie online. Wenn Sie in einer Gegend wohnen, in der die Nachfrage nach Kindertagesstätten hoch ist, machen Sie ein paar Führungen und tragen Sie Ihren Namen auf Wartelisten ein. Bedenken Sie, dass es einige Zeit dauern kann, bis Sie eine gute Passform gefunden haben. Sie werden auf Ihren Touren wahrscheinlich auch andere werdende Eltern treffen!',
+                    },
+                    {
+                        name: 'Planen Sie etwas Lustiges',
+                        description:
+                            'Nehmen Sie sich einen Moment Zeit und genießen Sie diese babyfreie Zeit. Einige Ideen: Kaufen Sie Karten für eine Aufführung oder Live-Musik, gehen Sie in einen Late-Night-Film, warten Sie in der Schlange an Ihrem Lieblingsfrühstückslokal am Sonntagmorgen oder unternehmen Sie einen Tagesausflug in die Nähe. Oder gehen Sie groß raus und planen Sie eine Babymoon.',
+                    },
+                    {
+                        name: 'Verbessern Sie Ihren Schlaf',
+                        description:
+                            'Es spielt keine Rolle, wie entschlossen Sie sind, sich auszuruhen, bevor Ihr Baby kommt, Ihr Körper hat andere Pläne. Egal, ob Sie ständig pinkeln müssen, sich ängstlich fühlen, es sich im Bett nicht bequem machen, hungrig aufwachen, Sodbrennen, Beinkrämpfe oder einfach nur Schlaflosigkeit haben – ausreichend Schlaf während der Schwangerschaft kann schwierig sein. Das heißt aber nicht, dass Sie es nicht versuchen sollten! Es gibt viele Dinge, die Sie tun können, um heute Nacht besser zu schlafen, von der Änderung Ihrer Ess- und Trinkgewohnheiten bis hin zu einer guten Schlafhygiene und dem richtigen Kissen. Lesen Sie die Grundlagen für einen erholsamen Schlaf während der Schwangerschaft und zögern Sie nicht, Ihren Arzt oder Ihre Hebamme um individuellen Rat zu bitten.',
+                    },
+                    {
+                        name: 'Vernetzen Sie sich mit anderen Eltern',
+                        description:
+                            'Menschen in der gleichen Phase der Elternschaft können eine Lebensader sein. Finden Sie eine Gruppe unvoreingenommener Eltern, sei es eine persönliche Müttergruppe, ein Schwangerschafts-Yoga-Kurs oder eine Online-Gruppe in der BabyCenter-Community. Schauen Sie sich Ihren Geburtsclub an (wo alle Mitglieder im selben Monat Mitglied werden) oder durchsuchen Sie unsere Gruppen nach Themen. Beginnen Sie jetzt damit, Beziehungen zu anderen Eltern und werdenden Eltern aufzubauen, damit Sie bei der Geburt Ihres Babys über solide Beziehungen verfügen.',
+                    },
+                ],
             },
             {
                 week: 20,
