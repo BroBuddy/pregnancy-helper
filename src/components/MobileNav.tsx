@@ -13,6 +13,11 @@ const MobileNav = () => {
                 <span className="text-xs">Übersicht</span>
             </Link>
 
+            <Link to="/names">
+                <img src="/icons/names.svg" alt="" width={30} />
+                <span className="text-xs">Babynamen</span>
+            </Link>
+
             <Link to="/weight-gain">
                 <img src="/icons/weight.svg" alt="" width={30} />
                 <span className="text-xs">Gewicht</span>

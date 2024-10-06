@@ -5,6 +5,7 @@ import WeekDetail from './components/WeekDetail.tsx'
 import WeightGain from './components/WeightGain.tsx'
 import TrimesterOverview from './components/TrimesterOverview.tsx'
 import Overview from './components/Overview.tsx'
+import { Names } from './components/Names.tsx'
 import App from './App.tsx'
 import './index.css'
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/overview',
                 element: <Overview />,
+            },
+            {
+                path: '/names',
+                element: <Names />,
             },
             {
                 path: '/weight-gain',
