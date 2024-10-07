@@ -4,8 +4,8 @@ const MobileNav = () => {
     return (
         <section className="mobile-nav">
             <Link to="/">
-                <img src="/icons/home.svg" alt="" width={30} />
-                <span className="text-xs">Home</span>
+                <img src="/icons/calculator.svg" alt="" width={30} />
+                <span className="text-xs">Zyklus</span>
             </Link>
 
             <Link to="/overview">

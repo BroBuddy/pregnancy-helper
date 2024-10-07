@@ -4,9 +4,6 @@ export const Timeline = [
         timeline: '1 - 13',
         weeks: [
             {
-                week: 1,
-            },
-            {
                 week: 2,
                 highlights: [
                     {
