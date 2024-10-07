@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const OverviewContent = ({ items }: { items: any[] }) => {
@@ -5,11 +6,10 @@ const OverviewContent = ({ items }: { items: any[] }) => {
         <>
             {items.map((item: any, index: number) => {
                 return (
-                    <>
+                    <React.Fragment key={index}>
                         {index >= 1 && (
                             <Link
                                 to={`/week/${index + 1}`}
-                                key={index}
                                 className="flex flex-col"
                             >
                                 <strong className="text-white">
@@ -35,7 +35,7 @@ const OverviewContent = ({ items }: { items: any[] }) => {
                                     })}
                             </Link>
                         )}
-                    </>
+                    </React.Fragment>
                 )
             })}
         </>

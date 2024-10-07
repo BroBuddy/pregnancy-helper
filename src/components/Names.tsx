@@ -118,7 +118,7 @@ export const Names = () => {
                         </TabsContent>
 
                         <TabsContent value="boy">
-                            <div className="flex flex-col rounded-lg bg-white/70 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Jungennamen
                                 </h2>
@@ -135,7 +135,7 @@ export const Names = () => {
                         </TabsContent>
 
                         <TabsContent value="girl">
-                            <div className="flex flex-col rounded-lg bg-white/70 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Mädchennamen
                                 </h2>
