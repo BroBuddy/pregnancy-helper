@@ -13,22 +13,22 @@ export const Names = () => {
     return (
         <section className="flex flex-col py-2 w-80">
             <Tabs defaultValue="gender" className="w-full">
-                <div className="rounded-lg bg-white/70 my-5 p-4">
+                <div className="rounded-lg bg-white/70 my-2 p-4">
                     <TabsList className="flex flex-row mx-2 justify-center">
                         <TabButton
                             value="gender"
                             text="Geschlecht"
-                            width={45}
+                            width={35}
                         />
-                        <TabButton value="boy" text="Jungen" width={45} />
-                        <TabButton value="girl" text="Mädchen" width={45} />
+                        <TabButton value="boy" text="Jungen" width={35} />
+                        <TabButton value="girl" text="Mädchen" width={35} />
                     </TabsList>
                 </div>
 
                 <div className="flex mt-2">
                     <div className="flex flex-col w-full">
                         <TabsContent value="gender">
-                            <div className="flex flex-col rounded-lg bg-white/70 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Den richtigen Namen finden
                                 </h2>
@@ -43,7 +43,7 @@ export const Names = () => {
                                 </p>
                             </div>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 mt-5 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Listen schreiben
                                 </h2>
@@ -56,7 +56,7 @@ export const Names = () => {
                                 </p>
                             </div>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 mt-5 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Ohren auf
                                 </h2>
@@ -70,7 +70,7 @@ export const Names = () => {
                                 </p>
                             </div>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 mt-5 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Aussprechen
                                 </h2>
@@ -82,7 +82,7 @@ export const Names = () => {
                                 </p>
                             </div>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 mt-5 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Aufschreiben
                                 </h2>
@@ -93,7 +93,7 @@ export const Names = () => {
                                 </p>
                             </div>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 mt-5 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Der Nachname
                                 </h2>
@@ -104,7 +104,7 @@ export const Names = () => {
                                 </p>
                             </div>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 mt-5 mb-5 p-4">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
                                 <h2 className="text-xl text-blue-500 pb-2">
                                     Die Geschwister
                                 </h2>

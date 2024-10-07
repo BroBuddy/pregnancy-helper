@@ -12,7 +12,7 @@ const compositions: any[] = [
         text: 'ca. 3 – 3,8 kg',
     },
     {
-        title: 'Blutvolumens',
+        title: 'Blutvolumen',
         text: 'ca. 1,2 kg',
     },
     {
@@ -25,14 +25,14 @@ const compositions: any[] = [
     },
     {
         title: 'Fruchtwasser',
-        text: '	ca. 1,3 kg',
+        text: 'ca. 1,3 kg',
     },
     {
         title: 'Gewebsflüssigkeit',
-        text: '	ca. 2 – 2,5 kg',
+        text: 'ca. 2 – 2,5 kg',
     },
     {
-        title: 'Brustdrüsengewebes',
+        title: 'Brustdrüsengewebe',
         text: 'ca. 0,8 – 1,0 kg',
     },
     {

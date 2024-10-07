@@ -5,9 +5,9 @@ const NamesList = ({ names }: any) => {
                 return (
                     <div
                         key={index}
-                        className="flex flex-col rounded-lg bg-white/70 my-5 p-4"
+                        className="flex flex-col rounded-lg bg-white/70 my-4 p-4"
                     >
-                        <h2 className="text-xl text-blue-500 pb-2">
+                        <h2 className="text-xl text-blue-500 mt-2 pb-2">
                             {name.letter}
                         </h2>
 

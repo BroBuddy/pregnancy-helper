@@ -27,7 +27,7 @@ const Overview = () => {
     return (
         <section className="flex flex-col py-2 w-80">
             <Tabs defaultValue="highlights" className="w-full">
-                <div className="card">
+                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                     <TabsList className="flex flex-row mx-2 justify-center">
                         <TabButton
                             value="highlights"
@@ -48,19 +48,25 @@ const Overview = () => {
                 </div>
 
                 <div className="flex mt-2">
-                    <div className="card flex flex-col w-full">
+                    <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4 w-full">
                         <TabsContent value="highlights">
-                            <h2>Highlights</h2>
+                            <h2 className="text-xl text-blue-500 pb-2">
+                                Highlights
+                            </h2>
                             <OverviewContent items={highlights} />
                         </TabsContent>
 
                         <TabsContent value="symptoms">
-                            <h2>Symptome</h2>
+                            <h2 className="text-xl text-blue-500 pb-2">
+                                Symptome
+                            </h2>
                             <OverviewContent items={symptoms} />
                         </TabsContent>
 
                         <TabsContent value="checklist">
-                            <h2>Checkliste</h2>
+                            <h2 className="text-xl text-blue-500 pb-2">
+                                Checkliste
+                            </h2>
                             <OverviewContent items={checklist} />
                         </TabsContent>
                     </div>
