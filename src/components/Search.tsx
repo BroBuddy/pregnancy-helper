@@ -25,20 +25,23 @@ const Search = () => {
 
     return (
         <>
-            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                <h2 className="text-xl text-blue-500 pb-2">Suche</h2>
+            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
+                <h2 className="text-xl text-blue-500 pb-2">Themen-Suche</h2>
+
+                <p className="text-sm">Min. 3 Buchstaben eingeben.</p>
 
                 <input
-                    className="bg-white rounded-lg p-1 text-sm"
+                    type="text"
+                    className="bg-white rounded-lg p-1 mt-3  text-sm"
                     placeholder="Was interessiert dich?"
                     onChange={handleSearch}
                 />
             </div>
 
             {q && (
-                <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
+                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                     <h2 className="text-xl text-blue-500 pb-2">
-                        {faq?.length} Treffer
+                        {faq?.length} Fragen gefunden
                     </h2>
 
                     {faq &&

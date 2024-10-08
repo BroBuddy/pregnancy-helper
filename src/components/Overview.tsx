@@ -51,21 +51,21 @@ const Overview = () => {
                     <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4 w-full">
                         <TabsContent value="highlights">
                             <h2 className="text-xl text-blue-500 pb-2">
-                                Highlights
+                                Anstehende Highlights
                             </h2>
                             <OverviewContent items={highlights} />
                         </TabsContent>
 
                         <TabsContent value="symptoms">
                             <h2 className="text-xl text-blue-500 pb-2">
-                                Symptome
+                                Mögliche Symptome
                             </h2>
                             <OverviewContent items={symptoms} />
                         </TabsContent>
 
                         <TabsContent value="checklist">
                             <h2 className="text-xl text-blue-500 pb-2">
-                                Checkliste
+                                Hilfreiche Checkliste
                             </h2>
                             <OverviewContent items={checklist} />
                         </TabsContent>

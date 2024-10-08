@@ -27,8 +27,6 @@ const Schedule = () => {
         return new Date(birthDay.getTime() - week * 7 * 24 * 60 * 60 * 1000)
     }
 
-    const startDate = calculateDate(weeksOfPregnancy)
-
     const getFullDate = (date: any) => {
         return `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}`
     }
@@ -40,11 +38,14 @@ const Schedule = () => {
     return (
         <>
             <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                <h2 className="text-xl text-blue-500 pb-2">Zeitplan</h2>
+                <h2 className="text-xl text-blue-500 pb-2">
+                    Dein persönlicher Zeitplan
+                </h2>
 
-                <p className="text-sm">Start ca. {getFullDate(startDate)}</p>
-
-                <p className="text-sm">Geburt ca. {getFullDate(birthDay)}</p>
+                <p className="text-sm">
+                    Die Geburt ist etwa für den{' '}
+                    <strong>{getFullDate(birthDay)}</strong> ausgerechnet.
+                </p>
             </div>
 
             {timeline.map((trimester: any, index: number) => {
