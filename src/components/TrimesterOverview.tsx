@@ -2,6 +2,7 @@ import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
 import TabButton from './TabButton'
 import Cycle from './Cycle'
 import Schedule from './Schedule'
+import Search from './Search'
 
 const TrimesterOverview = () => {
     return (
@@ -15,6 +16,7 @@ const TrimesterOverview = () => {
                             width={36}
                         />
                         <TabButton value="home" text="Zeitplan" width={36} />
+                        <TabButton value="heart" text="Suche" width={36} />
                     </TabsList>
                 </div>
 
@@ -26,6 +28,10 @@ const TrimesterOverview = () => {
 
                         <TabsContent value="home">
                             <Schedule />
+                        </TabsContent>
+
+                        <TabsContent value="heart">
+                            <Search />
                         </TabsContent>
                     </div>
                 </div>
