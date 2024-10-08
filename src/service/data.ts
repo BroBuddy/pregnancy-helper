@@ -601,7 +601,7 @@ export const Timeline = [
                 },
                 highlights: [
                     {
-                        name: 'BabyPositive Affirmationentritte',
+                        name: 'Positive Affirmationen',
                         description:
                             'Die richtigen Worte können Ihnen selbst in den schwierigsten Momenten helfen. Probieren Sie einige dieser ermutigenden Affirmationen für Schwangerschaft und Elternschaft aus.',
                     },
