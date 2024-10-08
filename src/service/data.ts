@@ -223,14 +223,14 @@ export const Timeline = [
                     {
                         name: 'Mutterschaftsbilder',
                         description:
-                            'Stellen Sie sicher, dass Sie Fotos von Ihrem schönen schwangeren Ich machen. Egal, ob Sie einen professionellen Fotografen, einen Freund oder Ihren Partner fotografieren lassen, hier finden Sie einige tolle Ideen für Schwangerschaftsfotos.',
+                            'Stellen Sie sicher, dass Sie Fotos von Ihrem schönen schwangeren Ich machen. Egal, ob Sie einen professionellen Fotografen, einen Freund oder Ihren Partner fotografieren lassen.',
                     },
                 ],
                 symptoms: [
                     {
                         name: 'Schwindel',
                         description:
-                            'Fühlen Sie sich ein wenig benommen oder als ob sich der Raum dreht? Dies ist ein häufiges Symptom im zweiten Trimester und ist höchstwahrscheinlich auf normale schwangerschaftsbedingte kardiovaskuläre Veränderungen zurückzuführen (eine höhere Herzfrequenz, größere Blutgefäße zur Aufnahme eines erhöhten Blutvolumens und vorübergehende Veränderungen im Kreislauf). Hier erfahren Sie, wie Sie mit Schwindelgefühlen während der Schwangerschaft umgehen können.',
+                            'Fühlen Sie sich ein wenig benommen oder als ob sich der Raum dreht? Dies ist ein häufiges Symptom im zweiten Trimester und ist höchstwahrscheinlich auf normale schwangerschaftsbedingte kardiovaskuläre Veränderungen zurückzuführen (eine höhere Herzfrequenz, größere Blutgefäße zur Aufnahme eines erhöhten Blutvolumens und vorübergehende Veränderungen im Kreislauf).',
                     },
                     {
                         name: 'Sehveränderungen',
@@ -371,7 +371,7 @@ export const Timeline = [
                     {
                         name: 'Regenbogenbabys',
                         description:
-                            'Wenn Sie nach einem Verlust schwanger sind, können Sie mit gemischten Gefühlen wie Sorge, Aufregung, Angst und Freude zu kämpfen haben. Hier finden Sie Möglichkeiten, Ihr Erlebnis zu würdigen und Ihr Regenbogenbaby zu feiern.',
+                            'Wenn Sie nach einem Verlust schwanger sind, können Sie mit gemischten Gefühlen wie Sorge, Aufregung, Angst und Freude zu kämpfen haben.',
                     },
                     {
                         name: 'Planung einer Babyparty',
@@ -599,6 +599,77 @@ export const Timeline = [
                     weight: 0.48,
                     size: 'Ihr Baby ist etwa so groß wie ein Spaghettikürbis',
                 },
+                highlights: [
+                    {
+                        name: 'BabyPositive Affirmationentritte',
+                        description:
+                            'Die richtigen Worte können Ihnen selbst in den schwierigsten Momenten helfen. Probieren Sie einige dieser ermutigenden Affirmationen für Schwangerschaft und Elternschaft aus.',
+                    },
+                    {
+                        name: 'Haustiere und Schwangerschaft',
+                        description:
+                            'Ist Ihr Hund besonders schützend? Rollt sich Ihre Katze auf Ihrem Bauch zusammen? Viele Tierexperten und Tierliebhaber sind sich einig, dass Haustiere eine Schwangerschaft (oder zumindest schwangerschaftsbedingte Veränderungen) spüren können.',
+                    },
+                    {
+                        name: 'Schwangerschaft in Übergröße',
+                        description:
+                            'Sie können eine gesunde Plus-Size-Schwangerschaft haben. Übergewicht oder Fettleibigkeit erhöhen das Risiko einiger Komplikationen, aber viele davon sind beherrschbar – und in einigen Fällen vermeidbar.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Akne',
+                        description:
+                            'Schwangerschaftsakne kommt sehr häufig vor und kann auch dann auftreten, wenn Sie noch nie zuvor Pickel hatten. (Schwangerschaftsbedingte Hormonveränderungen sind wahrscheinlich dafür verantwortlich.) Bevor Sie ein Aknemedikament einnehmen, sprechen Sie mit Ihrem Arzt oder einem Dermatologen, um sicherzustellen, dass es für die Schwangerschaft sicher ist. Viele Aknebehandlungen werden werdenden Müttern nicht empfohlen und eine davon – Isotretinoin (eine Art Retinoid) – kann schwere Geburtsfehler verursachen. Erfahren Sie mehr über sichere Hautpflege während der Schwangerschaft.',
+                    },
+                    {
+                        name: 'Besenreiser',
+                        description:
+                            'Wie Krampfadern neigen auch Besenreiser dazu, während der Schwangerschaft aufzutauchen, weil Sie zu viel Blut haben und eine wachsende Gebärmutter Druck auf Ihre Venen ausübt. Besenreiser sind eine Gruppe winziger Blutgefäße nahe der Hautoberfläche, meist an den Beinen oder im Gesicht. Sie können ein spinnen- oder sonnendurchbruchartiges Muster mit kleinen Zweigen aufweisen, die von der Mitte ausgehen, sie können wie die Zweige eines Baumes aussehen oder sie können als eine Gruppe einzelner dünner Linien ohne bestimmtes Muster erscheinen. Im Gegensatz zu Krampfadern treten Besenreiser nicht hervor. Um Besenreisern und Krampfadern vorzubeugen, sollten Sie sich regelmäßig bewegen, die Füße hochlegen, nicht lange ununterbrochen sitzen oder stehen und Kompressionsstrümpfe tragen.',
+                    },
+                    {
+                        name: 'Durchfall',
+                        description:
+                            'Bei schwangeren Frauen kommt es häufiger zu Verstopfung als zu Durchfall. Aber auch während der Schwangerschaft kann es zu Durchfall kommen – aus den gleichen Gründen wie in der Nichtschwangerschaft. Darüber hinaus berichten einige Frauen über leichten Durchfall in der Spätschwangerschaft, kurz bevor die Wehen einsetzen. Wenn Sie dreimal oder mehrmals an einem Tag flüssigen Stuhlgang haben, haben Sie Durchfall. Achten Sie darauf, viel Flüssigkeit zu sich zu nehmen (salzhaltige Flüssigkeiten wie Brühe oder Sportgetränke sind hilfreich) und fragen Sie Ihren Arzt nach der Einnahme rezeptfreier Medikamente gegen Durchfall. Wenn Ihr Durchfall länger als zwei Tage anhält oder Sie glauben, dass Sie an einer Lebensmittelvergiftung leiden könnten, rufen Sie Ihren Arzt oder Ihre Hebamme an.',
+                    },
+                    {
+                        name: 'Schwellung',
+                        description:
+                            'Es ist normal, dass während der Schwangerschaft eine gewisse Schwellung, auch Ödem genannt, auftritt. Sie halten mehr Wasser zurück, Ihre Blutchemie transportiert mehr Flüssigkeit in Ihr Gewebe und Ihre wachsende Gebärmutter übt Druck auf die Hauptvenen aus, wodurch der Blutrückfluss aus Ihren Beinen verlangsamt wird. Nach der Geburt wird Ihr Körper die überschüssige Flüssigkeit durch Urinieren und Schweiß ziemlich schnell ausscheiden. Wenn Sie Schwellungen haben, achten Sie auf Anzeichen einer Präeklampsie, z. B. eine übermäßige oder plötzliche Schwellung Ihrer Füße oder Knöchel oder eine mehr als mäßige Schwellung Ihrer Hände oder Ihres Gesichts. Stellen Sie außerdem sicher, dass Sie Ihren Arzt sofort benachrichtigen, wenn ein Bein deutlich stärker geschwollen ist als das andere, was auf ein Blutgerinnsel hinweisen könnte, das als TVT (tiefe Venenthrombose) bekannt ist.',
+                    },
+                    {
+                        name: 'Beinkrämpfe',
+                        description:
+                            'Im zweiten Trimester kann es zu Beinkrämpfen kommen, insbesondere nachts, wenn Sie versuchen zu schlafen. Beinkrämpfe können auf das zusätzliche Gewicht zurückzuführen sein, das Ihr Körper mit sich herumträgt, oder sie könnten mit einer Schwellung während der Schwangerschaft zusammenhängen. Wenn Sie eine haben, dehnen Sie sofort Ihre Wadenmuskulatur, indem Sie Ihr Bein strecken und Ihre Zehen nach hinten in Richtung Schienbein beugen. Massieren Sie dann den Muskel und wenden Sie Wärme an oder gehen Sie herum, um ihn aufzuwärmen.',
+                    },
+                    {
+                        name: 'Beckenschmerzen',
+                        description:
+                            'Normale Schwangerschaftsveränderungen, einschließlich entspannter Bänder, Gewichtszunahme und Ihr veränderter Schwerpunkt, können allesamt zu Beckenschmerzen führen. Wenn Ihr Bauch wächst, wird Ihr Becken nach vorne gedrückt und die Krümmung Ihres unteren Rückens wird ausgeprägter. Dadurch kann es zu einer starken Belastung der Muskeln und Bänder im und um das Becken kommen. Tatsächlich hängen Schmerzen im unteren Rückenbereich und Schmerzen im Beckenbereich häufig zusammen. Möglicherweise verspüren Sie Schmerzen, Stechen, Stechen oder Brennen überall von der Oberseite Ihrer Hüftknochen bis zur Pofalte, entweder vorne oder hinten. Versuchen Sie zur Linderung ein Schwangerschaftsbauchband oder einen Stützgürtel, Physiotherapie und ein Schmerzmittel wie Paracetamol (sprechen Sie jedoch mit Ihrem Arzt, bevor Sie Medikamente einnehmen).',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Denken Sie an Ihre Babyparty',
+                        description:
+                            'Werdende Mütter veranstalten normalerweise nicht ihre eigene Babyparty (bitten Sie einen Verwandten oder Freund, dies für Sie zu tun), aber Sie können das Thema, die Spiele und die Gästeliste mitbestimmen. Wenn dies nicht Ihr erstes Baby ist, sollten Sie über eine Babystreusel nachdenken, bei der es sich um eine lockerere Babyparty mit weniger Gästen handelt.',
+                    },
+                    {
+                        name: 'Nehmen Sie ausreichend Eisen zu sich',
+                        description:
+                            'Während der Schwangerschaft benötigt Ihr Körper mehr Eisen, um mit dem wachsenden Blutvolumen Schritt zu halten und Ihr heranwachsendes Baby und die Plazenta zu ernähren. Ohne ausreichend Eisen könnten Sie eine Anämie entwickeln und sich noch müder und lethargischer fühlen. Achten Sie darauf, eisenreiche Lebensmittel zu sich zu nehmen und fragen Sie Ihren Arzt, ob Sie ein Eisenpräparat benötigen. (Ihr vorgeburtliches Vitamin kann jedoch alles enthalten, was Sie brauchen.)',
+                    },
+                    {
+                        name: 'Melden Sie sich für Geburtskurse an',
+                        description:
+                            'Egal, ob Sie bestimmte Techniken wie Lamaze, Bradley oder HypnoBirthing erlernen möchten oder einfach nur mehr über Wehen und Entbindung erfahren möchten, ein Geburtskurs wird Ihnen bei der Vorbereitung helfen. Schauen Sie sich auch den Online-Geburtskurs von BabyCenter an, der die Anzeichen und Stadien der Wehen, Techniken zur Schmerzbehandlung und mehr vermittelt.',
+                    },
+                    {
+                        name: 'Achten Sie auf den Karpaltunnel',
+                        description:
+                            'Schwangere Frauen sind aufgrund der Schwellung an Händen und Handgelenken anfälliger für das Karpaltunnelsyndrom. Dies ist wahrscheinlicher, wenn Sie wiederholte Handbewegungen ausführen, z. B. das Beugen und Strecken Ihrer Handgelenke, während Sie beispielsweise am Computer arbeiten. Pausen einzulegen, die Handgelenke zu dehnen und auf einen ergonomischen Arbeitsplatz zu achten, kann hilfreich sein.',
+                    },
+                ],
             },
             {
                 week: 23,
@@ -607,13 +678,79 @@ export const Timeline = [
                     weight: 0.57,
                     size: 'Ihr Baby ist etwa so groß wie eine große Mango',
                 },
+                highlights: [
+                    {
+                        name: 'Sichere Schwangerschaftsübungen',
+                        description:
+                            'Für die meisten werdenden Mütter ist Bewegung nicht nur sicher, sondern wird auch für eine gesunde Schwangerschaft empfohlen. Wählen Sie aus diesen sicheren Schwangerschaftstrainings.',
+                    },
+                    {
+                        name: 'Top-Lebensmittel für die Schwangerschaft',
+                        description:
+                            'Lachs hilft bei der Entwicklung des fetalen Gehirns. Eier helfen, bestimmte Geburtsfehler zu verhindern. Avocados können Beinkrämpfe vorbeugen. Und das ist erst der Anfang!',
+                    },
+                    {
+                        name: 'Inspiration für Babynamen',
+                        description:
+                            'Hat Sie das Spiel mit der Namensgebung Ihres Babys ratlos gemacht? Wenn Ihnen die Ideen ausgehen, probieren Sie unseren Babynamen-Finder aus.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Linea nigra',
+                        description:
+                            'Die Linea nigra, auch Schwangerschaftslinie genannt, ist eine dunkle, vertikale Linie, die die meisten schwangeren Frauen im zweiten Trimester auf ihrem wachsenden Babybauch entwickeln. Höhere Hormonspiegel als üblich wirken auf die Zellen, die Melanin enthalten, das Ihrer Haut ihre Farbe verleiht. (Unterhaltsame Tatsache: Sie haben immer die Linie entlang Ihres Bauches, aber sie ist normalerweise nicht sichtbar.) Auch wenn die meisten Frauen während der Schwangerschaft die Linea nigra entwickeln, ist sie bei Frauen mit dunkler Haut und dunklem Haar am deutlichsten. Nach der Schwangerschaft sollte die Linea nigra im Laufe einiger Wochen bis Monate verblassen, bei manchen Frauen kann es jedoch sein, dass sie nicht vollständig verschwindet.',
+                    },
+                    {
+                        name: 'Brustveränderungen',
+                        description:
+                            'Die offensichtlichste Brustveränderung während der Schwangerschaft ist Ihnen wahrscheinlich sehr bewusst: Ihre Brüste wachsen! Jetzt, da Sie sich in der zweiten Hälfte der Schwangerschaft befinden, bemerken Sie möglicherweise auch, dass die Venen in Ihren Brüsten stärker hervortreten und Ihre Warzenhöfe (der pigmentierte Bereich um Ihre Brustwarzen) dunkler werden. Wenn Ihr Geburtstermin näher rückt, kann es sein, dass aus Ihren Brüsten Kolostrum austritt. Diese proteinreiche, antikörperreiche Flüssigkeit ist die erste Milch, die Ihr Baby nach der Geburt zu sich nimmt. Es ist völlig normal, wenn während der Schwangerschaft Tropfen dieser dicken, gelblichen Substanz aus Ihrer Brust austreten – aber es besteht kein Grund zur Sorge, wenn dies nicht der Fall ist.',
+                    },
+                    {
+                        name: 'Heißhunger',
+                        description:
+                            'Jetzt, da Ihr Appetit wahrscheinlich zurückgekehrt ist (vielleicht stärker als je zuvor), verspüren Sie möglicherweise ein starkes Verlangen. Die meisten Frauen verspüren während der Schwangerschaft ein Verlangen nach mindestens einem bestimmten Nahrungsmittel, und viele haben Verlangen nach einer Vielzahl unterschiedlicher Nahrungsmittel. Obwohl nicht klar ist, was das Verlangen nach einer Schwangerschaft verursacht, vermuten einige Experten, dass veränderte Hormone eine Rolle spielen. Wir haben BabyCenter-Mütter gefragt, worauf sie während der Schwangerschaft am meisten gelüstet haben: Fast die Hälfte (49 %) sagte Süßigkeiten, 42 % sagten salzige Snacks, 38 % sagten scharfes Essen und 21 % sagten saure Sachen wie Zitrusfrüchte, grüne Äpfel und saure Süßigkeiten. (Die Befragten konnten mehrere Kategorien auswählen.), Es ist in Ordnung, das zu essen, was sich gut anhört – aber lassen Sie nicht zu, dass ungesunde Heißhungerattacken Ihr Bedürfnis nach nahrhafter Nahrung während der Schwangerschaft überdecken. Um den Drang nach salzigen und süßen Snacks in Schach zu halten, sollten Sie sich jeden Tag abwechslungsreich und mit viel Obst und Gemüse, Vollkornprodukten und Eiweiß ernähren.',
+                    },
+                    {
+                        name: 'Sehveränderungen',
+                        description:
+                            'Bei vielen Frauen kommt es während der Schwangerschaft zu leichten und vorübergehenden Sehveränderungen, zum Beispiel zu einer stärkeren Kurzsichtigkeit oder verschwommenem Sehen. Schwangerschaftsbedingte Veränderungen der Hormone, des Stoffwechsels, der Flüssigkeitsretention und des Kreislaufs können sich alle auf Ihr Sehvermögen auswirken. Es ist ratsam, auf Veränderungen des Sehvermögens zu achten, da einige auf schwerwiegende gesundheitliche Komplikationen während der Schwangerschaft hinweisen können, wie z. B. Präeklampsie, Eklampsie und Hyperthyreose. Wenn bei Ihnen ein vorübergehender Sehverlust auftritt, Sie stark verschwommen oder doppelt sehen oder blinkende Lichter sehen, rufen Sie sofort Ihren Arzt an.',
+                    },
+                    {
+                        name: 'Vergesslichkeit',
+                        description:
+                            'Ist das „Schwangerschaftsgehirn“ real? Es ist nicht klar, aber einige glauben, dass Vergesslichkeit während der Schwangerschaft durch Schlafstörungen, hormonelle Veränderungen, Stress und Veränderungen im Gehirn verursacht werden kann. Wenn Sie Namen vergessen oder sich nicht konzentrieren können, sind Sie nicht allein – viele werdende Mütter sagen, dass sie einen Gehirnnebel verspüren. Aber bedenken Sie: Die Forschung geht nicht eindeutig davon aus, dass es ein Schwangerschaftsgehirn gibt oder dass es jede werdende Mutter betrifft. Schwangere Frauen, die es bemerken, leiden typischerweise unter leichter, beherrschbarer Vergesslichkeit. Und ein Schwangerschaftsgehirn bedeutet nicht, dass Sie nicht mehr so ​​schlau und fähig sind wie eh und je.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Entscheiden Sie, ob Sie eine Doula engagieren möchten',
+                        description:
+                            'Eine Doula ist eine ausgebildete Geburtshelferin, die Ihnen während der Wehen und der Entbindung helfen kann. Wenn Sie daran interessiert sind, jemanden einzustellen, ist es eine gute Idee, mit der Suche im zweiten Trimester zu beginnen. Sie können Ihren Arzt, Geburtshelfer oder Freunde um eine Überweisung bitten oder die DONA-Website besuchen. Es ist wichtig, eine Doula zu finden, die zu Ihnen passt. Sie sollten potenzielle Geburtsdoulas nach ihrer Ausbildung, Erfahrung, ihrem Zeitplan, ihren Techniken zur Bewältigung der Wehen, der Beteiligung des Partners, ihren Honoraren, Ersatzdoulas und Referenzen fragen.',
+                    },
+                    {
+                        name: 'Schreiben Sie Ihrem Baby einen Brief',
+                        description:
+                            'Dies kann ein bewegendes Andenken sein, das Sie später mit Ihrem Kind teilen können. Notieren Sie Ihre Schwangerschaftserfahrungen sowie Ihre Hoffnungen und Träume für die Zukunft Ihres Babys. Oder wenn Schreiben nicht Ihr Ding ist, stellen Sie eine Collage oder eine Erinnerungskiste mit Schwangerschaftserinnerungen wie Ihrem positiven Schwangerschaftstest und Ultraschallfotos zusammen. Schließlich können Sie Karten hinzufügen, die Sie bei Ihrer Babyparty erhalten, die Babymütze, die Sie im Krankenhaus erhalten, und das Coming-Home-Outfit Ihres Babys.',
+                    },
+                    {
+                        name: 'Schlafen Sie auf Ihrer Seite',
+                        description:
+                            'Um sich während der Schwangerschaft optimal auszuruhen, empfehlen Experten, auf der Seite zu schlafen. Einige Gesundheitsdienstleister raten Ihnen speziell dazu, auf der linken Seite zu schlafen, da dies den Druck auf die Vene verringert, die das Blut von Ihren Beinen zum Herzen zurückführt, und so eine bessere Durchblutung für Sie und Ihr Baby fördert. Allerdings gibt es keine eindeutigen Beweise dafür, dass es besser ist, auf der linken Seite zu schlafen. Sie können also ruhig die Seite wählen, die für Sie bequemer ist. Für viele Frauen bedeutet das ein Hin- und Herwechseln. Wenn Sie Schwierigkeiten haben, bequem auf der Seite zu liegen, investieren Sie in ein Schwangerschaftskissen für eine bessere Unterstützung von Hüfte und Rücken.',
+                    },
+                    {
+                        name: 'Bereiten Sie Ihren Körper auf die Wehen vor',
+                        description:
+                            'Jetzt ist ein guter Zeitpunkt, mit Übungen zu beginnen, die Ihnen während der Wehen und der Geburt helfen können. Frauen, die während der Schwangerschaft Sport treiben, haben möglicherweise weniger Schmerzen und Beschwerden während der Wehen, eine geringere Rate an Kaiserschnittgeburten und eine schnellere Genesung nach der Geburt.',
+                    },
+                ],
             },
             {
                 week: 24,
                 baby: {
                     length: 32.2,
                     weight: 0.67,
-                    size: 'Ihr Baby ist etwa so groß wie eine Kornähre',
+                    size: 'Ihr Baby ist etwa so groß wie ein Maiskolben',
                 },
             },
             {
@@ -683,7 +820,7 @@ export const Timeline = [
                 baby: {
                     length: 43,
                     weight: 1.95,
-                    size: 'Ihr Baby ist etwa so groß wie eine Jicama',
+                    size: 'Ihr Baby ist etwa so groß wie eine Yambohne',
                 },
             },
             {
@@ -715,7 +852,7 @@ export const Timeline = [
                 baby: {
                     length: 47.3,
                     weight: 2.81,
-                    size: 'Ihr Baby ist etwa so groß wie ein Römersalatkopf',
+                    size: 'Ihr Baby ist etwa so groß wie ein Salatkopf',
                 },
             },
             {
@@ -747,7 +884,7 @@ export const Timeline = [
                 baby: {
                     length: 51,
                     weight: 3.62,
-                    size: 'Ihr Baby ist etwa so groß wie eine kleiner Kürbis',
+                    size: 'Ihr Baby ist etwa so groß wie ein kleiner Kürbis',
                 },
             },
             {
