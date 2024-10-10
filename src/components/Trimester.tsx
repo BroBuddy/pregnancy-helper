@@ -4,7 +4,7 @@ import Cycle from './Cycle'
 import Schedule from './Schedule'
 import Search from './Search'
 
-const TrimesterOverview = () => {
+const Trimester = () => {
     return (
         <section className="flex flex-col py-2 w-80">
             <Tabs defaultValue="calculator" className="w-full">
@@ -40,4 +40,4 @@ const TrimesterOverview = () => {
     )
 }
 
-export default TrimesterOverview
+export default Trimester

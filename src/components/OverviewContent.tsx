@@ -24,7 +24,7 @@ const OverviewContent = (data: { items: WeekDetail[][] }) => {
                             )}
 
                             {item.length >= 1 &&
-                                item.map((item: any, index: number) => {
+                                item.map((item: WeekDetail, index: number) => {
                                     return (
                                         <span
                                             className="text-sm text-blue-500"

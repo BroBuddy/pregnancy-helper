@@ -12,9 +12,9 @@ const WeekDetail = () => {
     const { week } = useParams()
 
     const details = timeline
-        .map((trimester: any) => trimester.weeks)
+        .map((trimester: Trimester) => trimester.weeks)
         .flat()
-        .find((item: any) => item.week === Number(week))
+        .find((item: Week) => item.week === Number(week))
 
     return (
         <section className="flex flex-col py-2 w-80">

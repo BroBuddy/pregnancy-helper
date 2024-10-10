@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import WeekDetail from './components/WeekDetail.tsx'
 import WeightGain from './components/WeightGain.tsx'
-import TrimesterOverview from './components/TrimesterOverview.tsx'
+import Trimester from './components/Trimester.tsx'
 import Overview from './components/Overview.tsx'
 import { Names } from './components/Names.tsx'
 import App from './App.tsx'
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <TrimesterOverview />,
+                element: <Trimester />,
             },
             {
                 path: '/week/:week',

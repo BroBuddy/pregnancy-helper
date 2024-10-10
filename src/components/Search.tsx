@@ -1,18 +1,18 @@
 import { FAQ } from '@/service/faq'
-import React, { useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 
 const Search = () => {
-    const [faq, setFaq] = useState<any[]>(FAQ)
+    const [faq, setFaq] = useState<Faq[]>(FAQ)
     const [q, setQ] = useState<string>('')
 
-    const handleSearch = (event: any) => {
-        const value = event.target.value.toLowerCase()
+    const handleSearch = (event: ChangeEvent<{ value: string }>) => {
+        const value = event?.currentTarget?.value.toLowerCase()
         const length = value.length
 
         if (length >= 3) {
             setQ(value)
 
-            const list = faq.filter((item: any) => {
+            const list = faq.filter((item: Faq) => {
                 return item.question.toLowerCase().includes(value) ? item : null
             })
 
@@ -45,7 +45,7 @@ const Search = () => {
                     </h2>
 
                     {faq &&
-                        faq.map((item: any, index: number) => {
+                        faq.map((item: Faq, index: number) => {
                             return (
                                 <React.Fragment key={index}>
                                     <strong className="text-sm">

@@ -32,3 +32,8 @@ type Baby = {
     weight?: number
     size?: string
 }
+
+type Faq = {
+    question: string
+    answer: string[]
+}

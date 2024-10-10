@@ -1,11 +1,7 @@
-const TabItems = ({
-    items,
-}: {
-    items: { name: string; description: string }[]
-}) => {
+const TabItems = ({ items }: { items: WeekDetail[] }) => {
     return (
         <>
-            {items.map((item: any, index: number) => {
+            {items.map((item: WeekDetail, index: number) => {
                 return (
                     <div
                         key={index}

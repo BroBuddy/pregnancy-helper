@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, ChangeEvent } from 'react'
 
 const weightTable: number[][] = [
     [125, 175],
@@ -45,9 +45,9 @@ const WeightProgress = () => {
         )
     }
 
-    const handleWeightAmount = (event: any) => {
-        const weight = event.target.value.split(' ')[0]
-        setStartWeight(weight * 1000)
+    const handleWeightAmount = (event: ChangeEvent<{ value: string }>) => {
+        const weight = event?.currentTarget?.value.split(' ')[0]
+        setStartWeight(Number(weight) * 1000)
     }
 
     return (
