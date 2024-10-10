@@ -13,6 +13,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+    list-style-type: square;
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+
 a {
     font-weight: 500;
     color: #646cff;

@@ -11,7 +11,7 @@ const OverviewContent = (data: { items: WeekDetail[][] }) => {
                     <React.Fragment key={index}>
                         <Link
                             to={`/week/${index + 2}`}
-                            className="flex flex-col"
+                            className="flex text-left flex-col"
                         >
                             <strong className="text-white">
                                 {index + 2}. Woche
@@ -23,17 +23,21 @@ const OverviewContent = (data: { items: WeekDetail[][] }) => {
                                 </span>
                             )}
 
-                            {item.length >= 1 &&
-                                item.map((item: WeekDetail, index: number) => {
-                                    return (
-                                        <span
-                                            className="text-sm text-blue-500"
-                                            key={index}
-                                        >
-                                            {item.name}
-                                        </span>
-                                    )
-                                })}
+                            <ul>
+                                {item.length >= 1 &&
+                                    item.map(
+                                        (item: WeekDetail, index: number) => {
+                                            return (
+                                                <li
+                                                    className="text-sm text-blue-500"
+                                                    key={index}
+                                                >
+                                                    {item.name}
+                                                </li>
+                                            )
+                                        }
+                                    )}
+                            </ul>
                         </Link>
                     </React.Fragment>
                 )
