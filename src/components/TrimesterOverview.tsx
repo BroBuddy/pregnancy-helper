@@ -15,7 +15,11 @@ const TrimesterOverview = () => {
                             text="Zyklus"
                             width={36}
                         />
-                        <TabButton value="home" text="Zeitplan" width={36} />
+                        <TabButton
+                            value="calendar"
+                            text="Zeitplan"
+                            width={36}
+                        />
                     </TabsList>
                 </div>
 
@@ -26,7 +30,7 @@ const TrimesterOverview = () => {
                             <Search />
                         </TabsContent>
 
-                        <TabsContent value="home">
+                        <TabsContent value="calendar">
                             <Schedule />
                         </TabsContent>
                     </div>

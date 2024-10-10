@@ -1,34 +1,44 @@
+import { cn } from '@/lib/utils'
 import { Timeline } from '@/service/data'
-import { Link } from 'react-router-dom'
+import { CalendarIcon } from '@radix-ui/react-icons'
+import {
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+} from '@radix-ui/react-popover'
+import { Calendar } from './ui/calendar'
+import { useState } from 'react'
 
 const months: string[] = [
-    'Januar',
-    'Februar',
-    'März',
-    'April',
-    'Mai',
-    'Juni',
-    'Juli',
-    'August',
-    'September',
-    'Oktober',
-    'November',
-    'Dezember',
+    '01',
+    '02',
+    '03',
+    '04',
+    '05',
+    '06',
+    '07',
+    '08',
+    '09',
+    '10',
+    '11',
+    '12',
 ]
 
 const Schedule = () => {
     const timeline = Timeline
 
     const weeksOfPregnancy: number = 41
-    const birthDay: Date = new Date('03/20/2025')
     const today: Date = new Date()
+    const [date, setDate] = useState<string>('03/20/2025')
 
     const calculateDate = (week: number) => {
-        return new Date(birthDay.getTime() - week * 7 * 24 * 60 * 60 * 1000)
+        const currentDate = new Date(String(date))
+        return currentDate.getTime() - week * 7 * 24 * 60 * 60 * 1000
     }
 
     const getFullDate = (date: any) => {
-        return `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}`
+        const currentDate = new Date(date)
+        return `${currentDate.getDate()}.${months[currentDate.getMonth()]}.${currentDate.getFullYear()}`
     }
 
     const currentWeek = (startDate: any, endDate: any) => {
@@ -39,44 +49,71 @@ const Schedule = () => {
         <>
             <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                 <h2 className="text-xl text-blue-500 pb-2">
-                    Dein persönlicher Zeitplan
+                    Zeitplan bis zur Geburt
                 </h2>
 
-                <p className="text-sm">
-                    Die Geburt ist etwa für den{' '}
-                    <strong>{getFullDate(birthDay)}</strong> ausgerechnet.
-                </p>
+                <Popover>
+                    <PopoverTrigger asChild>
+                        <button
+                            className={cn(
+                                'justify-center items-center flex bg-white/0',
+                                !date && 'text-muted-foreground'
+                            )}
+                        >
+                            <CalendarIcon className="mr-2 h-4 w-4" />
+                            {date !== 'undefined' ? (
+                                getFullDate(date)
+                            ) : (
+                                <span className="text-sm">Datum auswählen</span>
+                            )}
+                        </button>
+                    </PopoverTrigger>
+
+                    <PopoverContent className="w-auto p-0 bg-white rounded-lg">
+                        <Calendar
+                            mode="single"
+                            fromDate={new Date()}
+                            selected={new Date(date)}
+                            onSelect={(value) => setDate(String(value))}
+                            initialFocus
+                        />
+                    </PopoverContent>
+                </Popover>
             </div>
 
-            {timeline.map((trimester: any, index: number) => {
-                return (
-                    <div
-                        className="flex flex-col rounded-lg bg-white/70 my-4 p-4"
-                        key={index}
-                    >
-                        <h2 className="text-xl text-blue-500 pb-2">
-                            {index + 1}. Trimester (Woche {trimester.timeline})
-                        </h2>
+            {date !== 'undefined' &&
+                timeline.map((trimester: any, index: number) => {
+                    return (
+                        <div
+                            className="flex flex-col rounded-lg bg-white/70 my-4 p-4"
+                            key={index}
+                        >
+                            <h2 className="text-xl text-blue-500 pb-2">
+                                {index + 1}. Trimester (Woche{' '}
+                                {trimester.timeline})
+                            </h2>
 
-                        {trimester.weeks.map((item: any, index: number) => {
-                            return (
-                                <div
-                                    key={index}
-                                    style={{
-                                        color: currentWeek(
-                                            calculateDate(
-                                                weeksOfPregnancy - item.week + 1
-                                            ),
+                            {trimester.weeks.map((item: any, index: number) => {
+                                return (
+                                    <div
+                                        key={index}
+                                        style={{
+                                            color: currentWeek(
+                                                calculateDate(
+                                                    weeksOfPregnancy -
+                                                        item.week +
+                                                        1
+                                                ),
 
-                                            calculateDate(
-                                                weeksOfPregnancy - item.week
+                                                calculateDate(
+                                                    weeksOfPregnancy - item.week
+                                                )
                                             )
-                                        )
-                                            ? '#1fc1fc'
-                                            : '',
-                                    }}
-                                >
-                                    <Link to={`/week/${item.week}`}>
+                                                ? '#1fc1fc'
+                                                : '',
+                                        }}
+                                        className="flex flex-row justify-between mx-4"
+                                    >
                                         <strong className="text-white">
                                             {item.week}. Woche
                                         </strong>
@@ -97,13 +134,12 @@ const Schedule = () => {
                                                 )
                                             )}
                                         </span>
-                                    </Link>
-                                </div>
-                            )
-                        })}
-                    </div>
-                )
-            })}
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    )
+                })}
         </>
     )
 }

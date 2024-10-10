@@ -1,4 +1,6 @@
+import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
 import React, { useEffect, useState } from 'react'
+import TabButton from './TabButton'
 
 const weightTable: number[][] = [
     [125, 175],
@@ -88,77 +90,120 @@ const WeightGain = () => {
 
     return (
         <section className="flex flex-col py-2 w-80">
-            <div className="card">
-                <h2>Gewichtszunahme der Mama</h2>
-
-                <p className="text-sm">
-                    Normalgewichtige Frauen legen im Laufe der Schwangerschaft
-                    im Durchschnitt etwa 11,5 bis 16 kg zu.
-                </p>
-                <p className="text-sm mt-5">
-                    Dabei fällt die Gewichtszunahme im ersten Trimester mit
-                    insgesamt 0,5 bis 2 kg eher gering aus, während sie sich im
-                    zweiten und dritten Trimester auf circa 0,4 kg pro Woche
-                    steigern kann.
-                </p>
-            </div>
-
-            <div className="card">
-                <h2>Zusammensetzung</h2>
-
-                {compositions.map((composition: any, index: number) => {
-                    return (
-                        <div
-                            key={index}
-                            className="flex flex-row justify-between mx-2"
-                        >
-                            <strong className="text-white">
-                                {composition.title}
-                            </strong>
-
-                            <span className="text-sm">{composition.text}</span>
-                        </div>
-                    )
-                })}
-            </div>
-
-            <div className="card">
-                <div className="flex flex-col items-center">
-                    <h2>Startgewicht der Mama</h2>
-
-                    <select
-                        defaultValue={defaultWeight}
-                        className="bg-white rounded-md mb-5 w-55"
-                        onChange={handleWeightAmount}
-                    >
-                        {Array.from({ length: 60 }).map(
-                            (_: unknown, index: number) => {
-                                return (
-                                    <option key={index}>{index + 40} kg</option>
-                                )
-                            }
-                        )}
-                    </select>
+            <Tabs defaultValue="weight" className="w-full">
+                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
+                    <TabsList className="flex flex-row mx-2 justify-center">
+                        <TabButton value="weight" text="Gewicht" width={36} />
+                        <TabButton value="chart" text="Verlauf" width={36} />
+                    </TabsList>
                 </div>
 
-                {weekWeight.map((increment: number[], index: number) => {
-                    return (
-                        <React.Fragment key={index}>
-                            <div className="flex flex-row justify-between mx-10">
-                                <strong className="text-white">
-                                    {index + 1}. Woche
-                                </strong>
+                <div className="flex mt-2">
+                    <div className="flex flex-col w-full">
+                        <TabsContent value="weight">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
+                                <h2 className="text-xl text-blue-500 pb-2">
+                                    Gewichtszunahme
+                                </h2>
 
-                                <span className="text-sm">
-                                    {getWeightIncrementByWeek(increment)} kg
-                                </span>
+                                <p className="text-sm">
+                                    Normalgewichtige Frauen legen im Laufe der
+                                    Schwangerschaft im Durchschnitt etwa 11,5
+                                    bis 16 kg zu.
+                                </p>
+                                <p className="text-sm mt-5">
+                                    Dabei fällt die Gewichtszunahme im ersten
+                                    Trimester mit insgesamt 0,5 bis 2 kg eher
+                                    gering aus, während sie sich im zweiten und
+                                    dritten Trimester auf circa 0,4 kg pro Woche
+                                    steigern kann.
+                                </p>
                             </div>
 
-                            {(index + 1 === 13 || index + 1 === 27) && <br />}
-                        </React.Fragment>
-                    )
-                })}
-            </div>
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
+                                <h2 className="text-xl text-blue-500 pb-2">
+                                    Zusammensetzung
+                                </h2>
+
+                                {compositions.map(
+                                    (composition: any, index: number) => {
+                                        return (
+                                            <div
+                                                key={index}
+                                                className="flex flex-row justify-between mx-2"
+                                            >
+                                                <strong className="text-white">
+                                                    {composition.title}
+                                                </strong>
+
+                                                <span className="text-sm">
+                                                    {composition.text}
+                                                </span>
+                                            </div>
+                                        )
+                                    }
+                                )}
+                            </div>
+                        </TabsContent>
+
+                        <TabsContent value="chart">
+                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
+                                <div className="flex flex-col items-center">
+                                    <h2 className="text-xl text-blue-500 pb-2">
+                                        Gewicht vor Schwangerschaft
+                                    </h2>
+
+                                    <select
+                                        defaultValue={defaultWeight}
+                                        className="bg-white rounded-md w-55"
+                                        onChange={handleWeightAmount}
+                                    >
+                                        {Array.from({ length: 60 }).map(
+                                            (_: unknown, index: number) => {
+                                                return (
+                                                    <option key={index}>
+                                                        {index + 40} kg
+                                                    </option>
+                                                )
+                                            }
+                                        )}
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
+                                <h2 className="text-xl text-blue-500 pb-2">
+                                    Mögliche Veränderungen
+                                </h2>
+
+                                {weekWeight.map(
+                                    (increment: number[], index: number) => {
+                                        return (
+                                            <React.Fragment key={index}>
+                                                <div className="flex flex-row justify-between mx-10">
+                                                    <strong className="text-white">
+                                                        {index + 1}. Woche
+                                                    </strong>
+
+                                                    <span className="text-sm">
+                                                        {getWeightIncrementByWeek(
+                                                            increment
+                                                        )}{' '}
+                                                        kg
+                                                    </span>
+                                                </div>
+
+                                                {(index + 1 === 13 ||
+                                                    index + 1 === 27) && <br />}
+                                            </React.Fragment>
+                                        )
+                                    }
+                                )}
+                            </div>
+                        </TabsContent>
+                    </div>
+                </div>
+            </Tabs>
         </section>
     )
 }
