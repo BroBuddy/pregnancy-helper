@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList } from '@radix-ui/react-tabs'
 import TabButton from './TabButton'
 import NamesList from './NamesList'
 
-export const Names = () => {
+const Names = () => {
     const boyNames = BoyNames
     const girlNames = GirlNames
 
@@ -161,3 +161,5 @@ export const Names = () => {
         </section>
     )
 }
+
+export default Names

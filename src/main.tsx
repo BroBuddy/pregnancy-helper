@@ -1,13 +1,14 @@
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import WeekDetail from './components/WeekDetail.tsx'
-import WeightGain from './components/WeightGain.tsx'
 import Trimester from './components/Trimester.tsx'
-import Overview from './components/Overview.tsx'
-import { Names } from './components/Names.tsx'
 import App from './App.tsx'
 import './index.css'
+
+const WeekDetail = React.lazy(() => import('./components/WeekDetail'))
+const Overview = React.lazy(() => import('./components/Overview'))
+const Names = React.lazy(() => import('./components/Names'))
+const WeightGain = React.lazy(() => import('./components/WeightGain'))
 
 const router = createBrowserRouter([
     {
@@ -19,19 +20,35 @@ const router = createBrowserRouter([
             },
             {
                 path: '/week/:week',
-                element: <WeekDetail />,
+                element: (
+                    <React.Suspense fallback={<>...</>}>
+                        <WeekDetail />
+                    </React.Suspense>
+                ),
             },
             {
                 path: '/overview',
-                element: <Overview />,
+                element: (
+                    <React.Suspense fallback={<>...</>}>
+                        <Overview />
+                    </React.Suspense>
+                ),
             },
             {
                 path: '/names',
-                element: <Names />,
+                element: (
+                    <React.Suspense fallback={<>...</>}>
+                        <Names />
+                    </React.Suspense>
+                ),
             },
             {
                 path: '/weight-gain',
-                element: <WeightGain />,
+                element: (
+                    <React.Suspense fallback={<>...</>}>
+                        <WeightGain />
+                    </React.Suspense>
+                ),
             },
         ],
     },
