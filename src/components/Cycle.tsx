@@ -1,11 +1,12 @@
+import { ChangeEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Cycle = () => {
     const navigate = useNavigate()
     const weeksOfPregnancy: number = 41
 
-    const handleCycleWeek = (event: any) => {
-        const week = event.target.value.split(' ')[0]
+    const handleCycleWeek = (event: ChangeEvent<{ value: string }>) => {
+        const week = event?.currentTarget?.value.split(' ')[0]
 
         navigate(`/week/${week}`)
     }

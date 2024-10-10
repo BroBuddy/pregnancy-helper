@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const OverviewContent = ({ items }: { items: any[] }) => {
+const OverviewContent = (data: { items: WeekDetail[][] }) => {
+    const { items } = data
+
     return (
         <>
-            {items.map((item: any, index: number) => {
+            {items.map((item: WeekDetail[], index: number) => {
                 return (
                     <React.Fragment key={index}>
                         <Link

@@ -28,21 +28,16 @@ const Schedule = () => {
     const timeline = Timeline
 
     const weeksOfPregnancy: number = 41
-    const today: Date = new Date()
     const [date, setDate] = useState<string>('03/20/2025')
 
-    const calculateDate = (week: number) => {
+    const calculateDate = (week: number | string) => {
         const currentDate = new Date(String(date))
-        return currentDate.getTime() - week * 7 * 24 * 60 * 60 * 1000
+        return currentDate.getTime() - Number(week) * 7 * 24 * 60 * 60 * 1000
     }
 
-    const getFullDate = (date: any) => {
+    const getFullDate = (date: string | number) => {
         const currentDate = new Date(date)
         return `${currentDate.getDate()}.${months[currentDate.getMonth()]}.${currentDate.getFullYear()}`
-    }
-
-    const currentWeek = (startDate: any, endDate: any) => {
-        return today > startDate && today < endDate
     }
 
     return (
@@ -82,7 +77,7 @@ const Schedule = () => {
             </div>
 
             {date !== 'undefined' &&
-                timeline.map((trimester: any, index: number) => {
+                timeline.map((trimester: Trimester, index: number) => {
                     return (
                         <div
                             className="flex flex-col rounded-lg bg-white/70 my-4 p-4"
@@ -93,50 +88,37 @@ const Schedule = () => {
                                 {trimester.timeline})
                             </h2>
 
-                            {trimester.weeks.map((item: any, index: number) => {
-                                return (
-                                    <div
-                                        key={index}
-                                        style={{
-                                            color: currentWeek(
-                                                calculateDate(
-                                                    weeksOfPregnancy -
-                                                        item.week +
-                                                        1
-                                                ),
+                            {trimester.weeks.map(
+                                (item: Week, index: number) => {
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="flex flex-row justify-between mx-4"
+                                        >
+                                            <strong className="text-white">
+                                                {item.week}. Woche
+                                            </strong>
 
-                                                calculateDate(
-                                                    weeksOfPregnancy - item.week
-                                                )
-                                            )
-                                                ? '#1fc1fc'
-                                                : '',
-                                        }}
-                                        className="flex flex-row justify-between mx-4"
-                                    >
-                                        <strong className="text-white">
-                                            {item.week}. Woche
-                                        </strong>
-                                        <br />
-
-                                        <span className="text-sm text-blue-500">
-                                            {getFullDate(
-                                                calculateDate(
-                                                    weeksOfPregnancy -
-                                                        item.week +
-                                                        1
-                                                )
-                                            )}{' '}
-                                            -{' '}
-                                            {getFullDate(
-                                                calculateDate(
-                                                    weeksOfPregnancy - item.week
-                                                )
-                                            )}
-                                        </span>
-                                    </div>
-                                )
-                            })}
+                                            <span className="text-sm text-blue-500">
+                                                {getFullDate(
+                                                    calculateDate(
+                                                        weeksOfPregnancy -
+                                                            item.week +
+                                                            1
+                                                    )
+                                                )}{' '}
+                                                -{' '}
+                                                {getFullDate(
+                                                    calculateDate(
+                                                        weeksOfPregnancy -
+                                                            item.week
+                                                    )
+                                                )}
+                                            </span>
+                                        </div>
+                                    )
+                                }
+                            )}
                         </div>
                     )
                 })}

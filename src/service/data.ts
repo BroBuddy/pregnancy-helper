@@ -752,6 +752,77 @@ export const Timeline = [
                     weight: 0.67,
                     size: 'Ihr Baby ist etwa so groß wie ein Maiskolben',
                 },
+                highlights: [
+                    {
+                        name: 'Schwangerschaftsglanz',
+                        description:
+                            'Der Schwangerschaftsglanz, von dem Sie wahrscheinlich schon so viel gehört haben, ist kein Mythos. Veränderte Hormone, eine überdurchschnittliche Ölproduktion und eine erhöhte Durchblutung können dazu führen, dass Ihre Haut gerötet, glänzend und sogar strahlend aussieht.',
+                    },
+                    {
+                        name: 'Ungewöhnliche Babynamen',
+                        description:
+                            'Wenn Sie von den beliebtesten Babynamen nicht begeistert sind, schauen Sie sich diese ungewöhnlichen und ungewöhnlichen Babynamen an – Golden, Zen, Ajax, Booker und mehr.',
+                    },
+                    {
+                        name: 'Nestbau',
+                        description:
+                            'Verspüren Sie den starken Drang, Ihr Zuhause zu reinigen und zu organisieren? Sie nisten wahrscheinlich. Das „Nest“ für ein neues Baby vorzubereiten, ist ein bei Menschen und Tieren verbreiteter Instinkt.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Hautausschläge',
+                        description:
+                            'Wenn bei Ihnen neue Hautsymptome wie Juckreiz, Hyperpigmentierung, erhabene Beulen oder Nesselsucht auftreten, wenden Sie sich an Ihren Arzt oder Ihre Hebamme. Die meisten Hautausschläge während der Schwangerschaft stehen im Zusammenhang mit Allergien, Kontaktdermatitis (Kontakt mit einem Reizstoff) oder Hautinfektionen – sie werden nicht durch eine Schwangerschaft verursacht. Einige Schwangerschaftszustände verursachen jedoch Hautausschläge und starken Juckreiz: atopischer Schwangerschaftsausbruch (AEP), juckende urtikarielle Papeln und Schwangerschaftsplaques (PUPPP) und Pemphigoid gestationis.',
+                    },
+                    {
+                        name: 'Blutungen',
+                        description:
+                            'Während des zweiten Trimesters treten bei manchen Frauen während der Schwangerschaft Schmierblutungen oder leichte Blutungen auf. Dies kann durch Veränderungen am Gebärmutterhals, eine Entzündung oder einen gutartigen Gebärmutterhalspolypen verursacht werden. Schmierblutungen im zweiten Trimester sind normalerweise harmlos. Wenn es jedoch zu regelmäßigen, stärkeren Blutungen kommt, suchen Sie sofort einen Arzt auf.',
+                    },
+                    {
+                        name: 'Stimmungsschwankungen',
+                        description:
+                            'Dramatische Stimmungsschwankungen mögen in der 24. Schwangerschaftswoche abgeklungen sein – es ist jedoch völlig normal, dass sie im zweiten Trimester auftreten. Hormonelle Veränderungen, Stress, Müdigkeit, Unwohlsein und Erschöpfung können zu gesteigerten Emotionen führen. Wenn Ihre Stimmungsschwankungen häufiger oder intensiver werden oder länger als zwei Wochen anhalten, sprechen Sie mit Ihrem Arzt und bitten Sie um eine Überweisung an einen Therapeuten. Möglicherweise leiden Sie während der Schwangerschaft unter Depressionen oder Schwangerschaftsangst.',
+                    },
+                    {
+                        name: 'Kurzatmigkeit',
+                        description:
+                            'Kurzatmigkeit kommt während der Schwangerschaft häufig vor. Schwangere Frauen haben einen erhöhten Sauerstoffbedarf und können sich atemlos fühlen, wenn ihr Blutdruck während der Schwangerschaft erhöht ist oder wenn sie zu viel Fruchtwasser haben. Aufgrund der Auswirkungen von Progesteron auf Ihre Lunge und das Atmungszentrum in Ihrem Gehirn können hormonelle Veränderungen auch ein Gefühl der Atemlosigkeit hervorrufen. Während leichte Atemnot während der Schwangerschaft normal ist, sind Atembeschwerden, anhaltender Husten und Schmerzen in der Brust allesamt Anzeichen dafür, dass Sie sofort einen Arzt aufsuchen sollten.',
+                    },
+                    {
+                        name: 'Erhöhter Appetit',
+                        description:
+                            'Bemerken Sie einen gesteigerten Appetit? Im zweiten Trimester verspüren Sie möglicherweise mehr Hunger als je zuvor. Es ist nur natürlich: Sie benötigen jetzt mehr Kalorien und Nährstoffe, um Ihr heranwachsendes Baby und Ihren sich verändernden Körper zu unterstützen. Im zweiten Trimester benötigen die meisten schwangeren Frauen täglich etwa 350 zusätzliche Kalorien. Wenn Sie befürchten, zu stark zuzunehmen, achten Sie auf die Qualität der Lebensmittel, die Sie zu sich nehmen, und wählen Sie gesunde Snacks. Lebensmittel mit reichlich Ballaststoffen, Proteinen, gesunden Fetten und komplexen Kohlenhydraten tragen dazu bei, dass Sie sich länger satt fühlen als abgepackte Lebensmittel und einfache Kohlenhydrate.',
+                    },
+                    {
+                        name: 'Pigmentstörung',
+                        description:
+                            'Hormonelle Veränderungen lösen während der Schwangerschaft eine erhöhte Melaninproduktion aus. Bei manchen Frauen führt dies zu dunklen Hautflecken, die Melasma genannt werden. Diese Flecken treten am häufigsten auf den Wangen, der Stirn, der Oberlippe und den Unterarmen auf. Bereiche Ihrer Haut, die normalerweise dunkler sind – wie die Warzenhöfe (Bereich um Ihre Brustwarzen) und Schamlippen – können während der Schwangerschaft ebenfalls dunkler erscheinen. Bei den meisten Frauen verschwindet das Melasma nach der Geburt. Um jedoch die Belastung Ihres Gesichts und Ihrer Arme während der Schwangerschaft zu minimieren, verwenden Sie täglich Sonnenschutzmittel mit Lichtschutzfaktor 30 oder höher oder bedecken Sie Ihre Haut mit langen Ärmeln und einer Mütze.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Vorzeitige Wehen erkennen',
+                        description:
+                            'Informieren Sie sich für alle Fälle über Anzeichen einer vorzeitigen Wehentätigkeit. Rufen Sie sofort Ihren Arzt oder Ihre Hebamme an, wenn bei Ihnen ungewöhnlicher Ausfluss, Vaginalblutungen, Bauchkrämpfe, Beckendruck, Schmerzen im unteren Rückenbereich oder Flüssigkeitsaustritt (bei dem es sich um Fruchtwasser handeln könnte, was bedeutet, dass die Fruchtblase geplatzt ist) auftreten. Etwa 10 Prozent der Babys in den Vereinigten Staaten werden zu früh geboren. Mit der 24. Woche geborene „Kleinstfrühgeborene“ brauchen viel ärztliche Hilfe, haben aber dank des medizinischen Fortschritts gute Überlebenschancen.',
+                    },
+                    {
+                        name: 'Machen Sie Ihr Zuhause babyfit',
+                        description:
+                            'Denken Sie nicht nur an die Organisation, Reinigung und Vorbereitung des Raums Ihres Babys, sondern auch an die Sicherheit – unsere Checkliste zur Babysicherheit ist ein guter Anfang. Da es noch eine Weile dauern wird, bis Ihr Kleines einzieht, beginnen Sie mit den Grundlagen. Ein guter erster Schritt ist es, sicherzustellen, dass Ihre Rauch- und Kohlenmonoxidmelder funktionsfähig sind. Wenn Sie in einem Haus wohnen, das vor dem Jahr 1978 gebaut wurde, besteht möglicherweise das Risiko einer Bleiexposition. Ihr staatliches oder örtliches Gesundheitsamt kann möglicherweise kostenlos Bleitests durchführen oder Sie an einen qualifizierten Fachmann verweisen.',
+                    },
+                    {
+                        name: 'Erwägen Sie eine Nabelschnurblutbank',
+                        description:
+                            'Beim Nabelschnurblut-Banking wird das nach der Geburt in der Nabelschnur und der Plazenta Ihres Neugeborenen verbleibende Blut gesammelt und für eine spätere medizinische Verwendung aufbewahrt. Wenn Sie das Nabelschnurblut Ihres Babys bei der Geburt sammeln und aufbewahren oder spenden möchten, müssen Sie bald entsprechende Vorkehrungen treffen.',
+                    },
+                    {
+                        name: 'Machen Sie sich bereit für Ihr Glukose-Screening',
+                        description:
+                            'Ihr Arzt wird Ihr Glukose-Screening wahrscheinlich zwischen der 24. und 28. Woche planen. Dieser Routinetest überwacht Schwangerschaftsdiabetes, von dem schätzungsweise 2 bis 10 Prozent der schwangeren Frauen betroffen sind. Während der Vorführung werden Sie gebeten, ein zuckerhaltiges Getränk zu trinken (oft als flaches, sirupartiges Orangenlimonade beschrieben). Nach einem kurzen Zeitfenster wird Ihnen Blut abgenommen und auf abnormale Glukosewerte untersucht. Dieses erste Screening ist nicht diagnostisch. Stattdessen geben die Ergebnisse Aufschluss darüber, ob weitere Tests auf Schwangerschaftsdiabetes erforderlich sind.',
+                    },
+                ],
             },
             {
                 week: 25,
@@ -760,6 +831,82 @@ export const Timeline = [
                     weight: 0.78,
                     size: 'Ihr Baby ist etwa so groß wie eine Steckrübe',
                 },
+                highlights: [
+                    {
+                        name: 'Sichere Schwangerschaftsübungen',
+                        description:
+                            'Die meisten Frauen können während der Schwangerschaft weiterhin Sport treiben – und Sport hat viele Vorteile. Aber wenn sich Ihr Körper verändert, müssen Sie Ihr Training anpassen.',
+                    },
+                    {
+                        name: 'Der Bauchnabel springt heraus?',
+                        description:
+                            'Sieht Ihr Innie eher wie ein Outie aus, jetzt, wo Sie sich dem dritten Trimester nähern? Keine Sorge: Normalerweise sind Veränderungen des Bauchnabels während der Schwangerschaft vorübergehend.',
+                    },
+                    {
+                        name: 'Bleiben Sie hydriert',
+                        description:
+                            'Sie haben es wahrscheinlich schon tausendmal gehört, aber es stimmt – es ist wichtig, während der Schwangerschaft ausreichend Flüssigkeit zu sich zu nehmen. Versuchen Sie, täglich etwa 10 Gläser Wasser zu trinken.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Dickeres Haar',
+                        description:
+                            'Ihr Haar könnte voller und glänzender aussehen als je zuvor. Es ist nicht so, dass Ihnen mehr Haare wachsen, aber dank hormoneller Veränderungen bleiben die Haare, die Sie normalerweise verlieren würden, länger als gewöhnlich erhalten. Leider fallen diese zusätzlichen Haare nach der Geburt aus.',
+                    },
+                    {
+                        name: 'Schambeinfugenstörung',
+                        description:
+                            'Eine Schambeinfugenstörung (SPD), auch Beckengürtelschmerzen genannt, kann auftreten, wenn sich Ihr Körper auf die Geburt vorbereitet. Die Bänder, die die Gelenke in Ihrem Beckenbereich umgeben, werden entspannter und flexibler – und dehnen sich möglicherweise zu weit aus oder ermöglichen eine zu leichte Bewegung der Beckenknochen. Diese Veränderung kann zusammen mit der zunehmenden Größe Ihres Babys zu ernsthaften Beschwerden führen und sogar Ihre Mobilität einschränken. Wenn Sie unter Beckenschmerzen leiden, sprechen Sie mit Ihrem Arzt über Behandlungsmöglichkeiten. Vermeiden Sie alle Aktivitäten, die Schmerzen verursachen, verbringen Sie Zeit ohne Füße und versuchen Sie es mit einem Beckenstützgürtel oder -gürtel.',
+                    },
+                    {
+                        name: 'Juckreiz',
+                        description:
+                            'Ihre wachsenden Brüste und Ihr wachsender Bauch dehnen Ihre Haut, was zu Juckreiz führt. Ein mäßiger Juckreiz während der Schwangerschaft ist zwar unangenehm, aber weder gefährlich noch besorgniserregend. Sie können den Juckreiz bekämpfen, indem Sie Haferflockenbäder nehmen, Lotion auftragen und weiche, locker sitzende Kleidung tragen. Wenn Ihr Juckreiz jedoch stärker wird oder ein neuer Ausschlag auftritt, informieren Sie Ihren Arzt oder Ihre Hebamme. Dies könnte auf ein Problem hinweisen – beispielsweise kann eine schwere Schwangerschaftskomplikation namens Cholestase starken Juckreiz auslösen, meist spät in der Schwangerschaft.',
+                    },
+                    {
+                        name: 'Schlaflosigkeit',
+                        description:
+                            'Auch wenn Ihnen jeder sagt, Sie sollen sich ausruhen, solange Sie können, wird das Ein- und Durchschlafen oft zu einer Herausforderung, je näher Ihr Geburtstermin rückt. Es ist schwierig, sich nachts wohl zu fühlen, da Ihr Bauch größer wird und der wachsende Druck auf Ihre Blase Sie möglicherweise immer wieder dazu aufweckt, mitten in der Nacht zu pinkeln. Obwohl Schlaflosigkeit während der Schwangerschaft schwer zu überwinden sein kann, probieren Sie diese Tricks aus, um während der Schwangerschaft besser zu schlafen. Progressive Muskelentspannung, geführte Bilder und andere Strategien können Ihnen helfen, sich zu entspannen und ängstliche Gedanken zur Ruhe zu bringen.',
+                    },
+                    {
+                        name: 'Schwindel',
+                        description:
+                            'Während der Schwangerschaft arbeitet Ihr Herz-Kreislauf-System härter als je zuvor. Das Blutvolumen in Ihrem Körper hat sich um bis zu 50 Prozent erhöht und Ihr Herzschlag beschleunigt sich. Ihr Herz pumpt jede Minute mehr Blut als vor Ihrer Schwangerschaft. Aus diesem Grund kann es beim Aufstehen zu Schwindelgefühlen und hin und wieder zu Benommenheit kommen. (In der Spätschwangerschaft übt Ihre wachsende Gebärmutter auch Druck auf Ihre Venen aus und verlangsamt die Durchblutung.) Um Schwindelgefühlen vorzubeugen, achten Sie darauf, dass Sie ausreichend essen und trinken, nicht flach auf dem Rücken liegen, langsam aufstehen, Überhitzung vermeiden usw Übertreiben Sie es nicht, wenn Sie trainieren.',
+                    },
+                    {
+                        name: 'Blähungen',
+                        description:
+                            'Wenn Ihre Blähungen und Blähungen besonders lästig oder peinlich sind, sollten Sie darüber nachdenken, ein paar Tage lang im Auge zu behalten, was Sie essen, und sich notieren, wann Ihre Symptome am schlimmsten sind. Linderung kann so einfach sein, dass Sie vorübergehend ein paar Dinge aus Ihrer Ernährung streichen. (Milchprodukte, Brokkoli, Kohl, Vollkornprodukte, Bohnen und frittierte, fetthaltige Lebensmittel sind häufige Verursacher von Blähungen.) Wenn diese und andere Änderungen des Lebensstils nicht helfen, fragen Sie Ihren Arzt nach einem sicheren, rezeptfreien Arzneimittel für Gas.',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Schwangerschaftsprobleme erkennen',
+                        description:
+                            'Eine Schwangerschaft bringt viele Schmerzen und seltsame Symptome mit sich, die völlig normal sind. Einige Schwangerschaftssymptome können jedoch auf ein Problem hinweisen. Rufen Sie Ihren Arzt oder Ihre Hebamme an, wenn Sie Blutungen, Schmierblutungen oder Schmerzen haben. wenn Ihr Baby weniger aktiv zu sein scheint; oder wenn Ihre Fruchtblase platzt. Weitere Anzeichen eines möglichen Problems sind starker Juckreiz, starke Kopfschmerzen, schnelle Gewichtszunahme, plötzliche Schwellung, Schmerzen beim Wasserlassen, seltsamer Vaginalausfluss, Fieber und Kurzatmigkeit. Wenn Sie eines dieser Probleme haben, rufen Sie sofort Ihren Arzt oder Ihre Hebamme an.',
+                    },
+                    {
+                        name: 'Denken Sie an den Schlafplatz Ihres Babys',
+                        description:
+                            'Die American Academy of Pediatrics (AAP) empfiehlt, in den ersten 6 Monaten oder idealerweise im ersten Jahr ein Zimmer (aber kein Bett) mit Ihrem Baby zu teilen. Das bedeutet, dass Ihr Baby in einem Kinderbett, einer Wiege oder einem Spielplatz schläft, der in Ihrem Zimmer neben Ihrem Bett aufgestellt ist. Laut AAP kann die gemeinsame Nutzung von Räumen das SIDS-Risiko um bis zur Hälfte senken. Außerdem fällt es Ihnen leichter, Ihr Baby zu trösten, zu beaufsichtigen und zu füttern. Zusätzlich zu einem sicheren Schlafplatz für Ihr Baby möchten Sie auch andere wichtige Dinge für das Kinderzimmer haben, wie einen Wickeltisch oder eine Wickelunterlage, ein Babyphone, eine Soundmaschine und vielleicht einen Gleiter oder eine Wippe, in der Sie sich beim Füttern entspannen können Baby.',
+                    },
+                    {
+                        name: 'Machen Sie eine Finanzplanung',
+                        description:
+                            'Eltern zu werden bedeutet neue finanzielle Verantwortung – und Aufgaben wie den Abschluss einer Lebens- und Berufsunfähigkeitsversicherung, die Erstellung eines Testaments, die Eröffnung eines College-Sparkontos für Ihr Kind, wenn möglich, und herauszufinden, wie sich Ihr Baby auf Ihren Steuerstatus auswirkt. Wenn Ihnen diese Aufgaben entmutigend erscheinen, bringen Sie den Stein ins Rollen, indem Sie mehr über die Familienfinanzen für frischgebackene Eltern erfahren.',
+                    },
+                    {
+                        name: 'Untersuchen Sie den Mutterschaftsurlaub',
+                        description:
+                            'Wenn Sie planen, nach der Geburt Ihres Babys an Ihren aktuellen Arbeitsplatz zurückzukehren, ist jetzt ein guter Zeitpunkt, mit der Ausarbeitung der Einzelheiten Ihres Mutterschaftsurlaubs zu beginnen. Die meisten Unternehmen sind durch den Family & Medical Leave Act (FMLA) verpflichtet, eine Form von unbezahlter, geschützter Freistellung anzubieten. (Wenn Sie jedoch für ein privates Unternehmen mit weniger als 50 Mitarbeitern arbeiten oder Ihren Job seit weniger als einem Jahr ausüben, sind Sie nicht qualifiziert.) Bezahlter Urlaub aus familiären Gründen ist in den Vereinigten Staaten nicht vorgeschrieben, aber schon wird von einigen Firmen angeboten.',
+                    },
+                    {
+                        name: 'Lassen Sie sich impfen',
+                        description:
+                            'Einige Impfungen sind während der Schwangerschaft sehr wichtig und werden empfohlen, um Sie und Ihr Baby zu schützen. Lassen Sie sich impfen und stellen Sie sicher, dass Sie über die Grippeimpfung, den Tdap-Impfstoff (Tetanus-Diphtherie-azellulärer Pertussis) und den COVID-19-Impfstoff oder die Auffrischimpfung auf dem Laufenden sind.',
+                    },
+                ],
             },
             {
                 week: 26,
@@ -768,6 +915,62 @@ export const Timeline = [
                     weight: 0.91,
                     size: 'Ihr Baby ist etwa so groß wie eine Frühlingszwiebel',
                 },
+                highlights: [
+                    {
+                        name: 'Ideen für Schwangerschaftsbilder',
+                        description:
+                            'Da Ihr drittes Trimester vor der Tür steht, sieht Ihr Babybauch möglicherweise besonders fototauglich aus. Halten Sie diesen besonderen Moment in der Schwangerschaft mit diesen Ideen für Schwangerschaftsbilder fest.',
+                    },
+                    {
+                        name: '3D-Ultraschall',
+                        description:
+                            'Ein „Andenken-Ultraschall“ aus einer Privatklinik kann Ihnen einen magischen Blick auf Ihr Baby verschaffen, viele Experten raten jedoch davon ab. Hier sind einige Dinge, die Sie bedenken sollten, bevor Sie einen 3D-Ultraschall buchen.',
+                    },
+                    {
+                        name: 'Schwangerschaftsernährung',
+                        description:
+                            'Es ist wichtig, ausreichend wichtige Nährstoffe wie Kalzium, Eisen, Jod, Cholin, Vitamin A, Vitamin C, Vitamin D, Vitamin B6, Vitamin B12, Folsäure und Omega-3-Fettsäuren zu sich zu nehmen.',
+                    },
+                ],
+                symptoms: [
+                    {
+                        name: 'Schmerzen im unteren Rücken',
+                        description:
+                            'Wenn Ihr unterer Rücken in letzter Zeit schmerzt, ist das sowohl auf Ihre wachsende Gebärmutter als auch auf hormonelle Veränderungen zurückzuführen, die Ihre Gelenke und Bänder lockern. Ungefähr 60 % der schwangeren Frauen haben Schmerzen im unteren Rücken, die das Schlafen oder die Ausführung alltäglicher Aufgaben erschweren können. Aktiv zu bleiben und Cardiotraining mit geringer Belastung durchzuführen, kann Ihnen Erleichterung verschaffen. Versuchen Sie es mit Gehen oder Schwimmen sowie mit Dehn- und Krafttraining. Auch Selbstpflegepraktiken, die die Entspannung fördern (wie Schwangerschaftsmassage, Meditation und Schwangerschaftsyoga), können bei Verspannungen und Beschwerden helfen. Hören Sie vor allem auf Ihren Körper. Wenn die Art und Weise, wie Sie sitzen, stehen oder schlafen, schmerzt, nehmen Sie Anpassungen vor.',
+                    },
+                    {
+                        name: 'Braxton Hicks',
+                        description:
+                            'Braxton-Hicks-Kontraktionen werden manchmal auch „Übungskontraktionen“ genannt und sind unregelmäßige Uteruskontraktionen, die auftreten, bevor die Wehen tatsächlich einsetzen. Sie werden oft als Gefühl wie Menstruationsbeschwerden oder als würde sich der Magen zusammenziehen, beschrieben. Gegen Ende der Schwangerschaft können sie zunehmend intensiver werden. Im Allgemeinen unterscheiden sich Braxton-Hicks-Kontraktionen von echten Kontraktionen dadurch, dass sie unregelmäßig sind und schwächer werden, anstatt stärker zu werden. Sie können unangenehm sein, sind aber nicht oft schmerzhaft. Dehydrierung, Erschöpfung und sogar das Sitzen oder Liegen in einer bestimmten Position können Braxton-Hicks auslösen. Sie hören oft auf, nachdem Sie etwas Wasser getrunken, sich ausgeruht oder die Position gewechselt haben. Manchmal sind Braxton-Hicks-Wehen jedoch schwer von frühen Wehen zu unterscheiden. Wenn Sie Anzeichen einer vorzeitigen Wehentätigkeit bemerken, rufen Sie sofort Ihren Arzt an.',
+                    },
+                    {
+                        name: 'Kopfschmerzen',
+                        description:
+                            'Zusätzlich zu den sich verändernden Hormonen gibt es eine Vielzahl von Faktoren, die während der Schwangerschaft zu leichten Kopfschmerzen führen können. Erschöpfung, Hunger und Dehydrierung gehören zu den häufigsten Ursachen für Kopfschmerzen – aber auch Sehstörungen und Allergien können eine Rolle spielen. Ausreichend Schlaf, regelmäßiges Essen und ausreichende Flüssigkeitszufuhr können Schwangerschaftskopfschmerzen lindern. Wenn das nicht hilft, wenden Sie sich an Ihren Arzt oder Ihre Hebamme, die Ihnen wahrscheinlich die Daumen hoch geben wird, Paracetamol zur Behandlung von Kopfschmerzen einzunehmen. Starke Kopfschmerzen während der Schwangerschaft könnten ein Zeichen für Präeklampsie sein, eine schwere Blutdruckstörung. Dieser Zustand ist für die Mutter und ihr Baby lebensbedrohlich, wenn er nicht behandelt wird. Rufen Sie daher sofort Ihren Arzt an, wenn Sie unter starken oder anhaltenden Kopfschmerzen leiden.',
+                    },
+                    {
+                        name: 'Verstopfung',
+                        description:
+                            'Ein erhöhter Progesteronspiegel verlangsamt die Verdauung während der Schwangerschaft, was bei den meisten werdenden Müttern irgendwann zu Verstopfung führt. Auch ein vermindertes Aktivitätsniveau und eine sich ausdehnende Gebärmutter können zu seltenem oder hartem Stuhlgang führen. Verstopfung kann während der Schwangerschaft äußerst unangenehm sein und zu Hämorrhoiden oder geschwollenen Blutgefäßen rund um den Mastdarm führen. Die topische Behandlung von Hämorrhoiden ist für schwangere Frauen in der Regel sicher. Fragen Sie jedoch Ihren Arzt, bevor Sie ein neues Medikament ausprobieren. Vorbeugung ist die beste Möglichkeit, Verstopfung in den Griff zu bekommen und Hämorrhoiden vorzubeugen. Bleiben Sie hydriert, indem Sie Ihre Wasseraufnahme überwachen oder einen Alarm auf Ihrem Telefon einstellen, der Sie daran erinnert, viel zu trinken. Eine ballaststoffreiche Ernährung (mit viel Obst, Gemüse und Vollkornprodukten) und regelmäßige Bewegung können Verstopfung lindern. Auch die Einnahme von Magnesium oder einem nicht abführenden Stuhlweichmacher kann helfen.',
+                    },
+                    {
+                        name: 'Dehnungsstreifen',
+                        description:
+                            'Wenn Ihr Baby wächst, wächst auch Ihr Bauch. Ihre Haut dehnt sich schnell, um mithalten zu können – und möglicherweise bemerken Sie bereits Dehnungsstreifen an Bauch, Brüsten und Oberschenkeln. Dehnungsstreifen variieren von Person zu Person und können genetisch bedingt sein. Es gibt nicht viel, was Sie tun können, um Dehnungsstreifen vorzubeugen. Seien Sie also vorsichtig bei teuren Cremes, die versprechen, sie zu beseitigen. Eine Sache, die helfen kann, ist die Vermeidung einer schnellen oder übermäßigen Gewichtszunahme. (Wenn Sie mehr als das empfohlene Schwangerschaftsgewicht zunehmen und schnell zunehmen, erhöht sich das Risiko, Dehnungsstreifen zu bekommen.)',
+                    },
+                ],
+                checklist: [
+                    {
+                        name: 'Planen Sie einen Babymoon-Urlaub',
+                        description:
+                            'Es ist der perfekte Zeitpunkt, eine Babymoon-Reise oder eine letzte Reise vor der Geburt Ihres Babys zu planen. Sich jetzt mit Ihrem Partner zu verbinden, ist eine großartige Möglichkeit, Ihre Beziehung zu festigen. Sie werden auch Erinnerungen sammeln, auf die Sie mit einem Lächeln zurückblicken können, wenn Sie unter Schlafmangel leiden und gestresst sind, weil Sie sich um Ihr neues Baby kümmern müssen. Bedenken Sie bei der Wahl des Ortes, dass Sie bei einer komplizierten Schwangerschaft möglicherweise näher am Wohnort bleiben müssen. Ihr Arzt oder Ihre Hebamme empfiehlt möglicherweise einen Aufenthalt oder einen Tagesausflug anstelle eines weit entfernten Ziels.',
+                    },
+                    {
+                        name: 'Erwägen Sie weitere Kurse',
+                        description:
+                            'Zusätzlich zu einem Geburtsvorbereitungskurs möchten Sie möglicherweise Kurse zu Babypflege, Stillen und HLW bei Säuglingen belegen. Viele Krankenhäuser bieten diese an, Sie können aber auch Ihren Arzt um eine Empfehlung bitten. Es gibt auch Online-Optionen wie BabyCenter-Kurse. Im All-in-One-Babysicherheitskurs mit HLW von BabyCenter zeigt Ihnen ein erstklassiger pädiatrischer Notarzt, was zu tun ist, wenn Ihr Baby zu würgen beginnt oder aufhört zu atmen.',
+                    },
+                ],
             },
             {
                 week: 27,

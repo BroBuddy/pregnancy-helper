@@ -7,21 +7,21 @@ const Overview = () => {
     const timeline = Timeline
 
     const highlights = timeline
-        .map((trimester: any) => trimester.weeks)
+        .map((trimester: Trimester) => trimester.weeks)
         .flat()
-        .map((item: any) => item.highlights)
+        .map((item: Week) => item.highlights)
         .map((item: any) => (item !== undefined ? item : []))
 
     const symptoms = timeline
-        .map((trimester: any) => trimester.weeks)
+        .map((trimester: Trimester) => trimester.weeks)
         .flat()
-        .map((item: any) => item.symptoms)
+        .map((item: Week) => item.symptoms)
         .map((item: any) => (item !== undefined ? item : []))
 
     const checklist = timeline
-        .map((trimester: any) => trimester.weeks)
+        .map((trimester: Trimester) => trimester.weeks)
         .flat()
-        .map((item: any) => item.checklist)
+        .map((item: Week) => item.checklist)
         .map((item: any) => (item !== undefined ? item : []))
 
     return (

@@ -1,14 +1,8 @@
 import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
-import React, { useEffect, useState } from 'react'
 import TabButton from './TabButton'
+import WeightProgress from './WeightProgress'
 
-const weightTable: number[][] = [
-    [125, 175],
-    [300, 475],
-    [325, 475],
-]
-
-const compositions: any[] = [
+const compositions: Composition[] = [
     {
         title: 'Gewicht des Babys',
         text: 'ca. 3 – 3,8 kg',
@@ -44,50 +38,6 @@ const compositions: any[] = [
 ]
 
 const WeightGain = () => {
-    const [startWeight, setStartWeight] = useState<number>(55000)
-    const [weekWeight, setWeekWeight] = useState<number[][]>([])
-
-    const defaultWeight = startWeight / 1000 + ' kg'
-    const weeksOfPregnancy: number = 41
-
-    useEffect(() => {
-        const weightInWeek = [[startWeight, startWeight]]
-
-        for (let i = 0; i <= weeksOfPregnancy; i++) {
-            if (i < 14) {
-                weightInWeek.push([
-                    weightInWeek[i][0] + weightTable[0][0],
-                    weightInWeek[i][1] + weightTable[0][1],
-                ])
-            } else if (i >= 14 && i < 28) {
-                weightInWeek.push([
-                    weightInWeek[i][0] + weightTable[1][0],
-                    weightInWeek[i][1] + weightTable[1][1],
-                ])
-            } else if (i >= 28 && i <= 39) {
-                weightInWeek.push([
-                    weightInWeek[i][0] + weightTable[2][0],
-                    weightInWeek[i][1] + weightTable[2][1],
-                ])
-            }
-        }
-
-        setWeekWeight(weightInWeek)
-    }, [startWeight])
-
-    const getWeightIncrementByWeek = (increment: number[]) => {
-        return (
-            (increment[0] / 1000).toFixed(1) +
-            ' - ' +
-            (increment[1] / 1000).toFixed(1)
-        )
-    }
-
-    const handleWeightAmount = (event: any) => {
-        const weight = event.target.value.split(' ')[0]
-        setStartWeight(weight * 1000)
-    }
-
     return (
         <section className="flex flex-col py-2 w-80">
             <Tabs defaultValue="weight" className="w-full">
@@ -106,12 +56,12 @@ const WeightGain = () => {
                                     Gewichtszunahme
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Normalgewichtige Frauen legen im Laufe der
                                     Schwangerschaft im Durchschnitt etwa 11,5
                                     bis 16 kg zu.
                                 </p>
-                                <p className="text-sm mt-5">
+                                <p className="text-sm text-left mt-5">
                                     Dabei fällt die Gewichtszunahme im ersten
                                     Trimester mit insgesamt 0,5 bis 2 kg eher
                                     gering aus, während sie sich im zweiten und
@@ -126,7 +76,10 @@ const WeightGain = () => {
                                 </h2>
 
                                 {compositions.map(
-                                    (composition: any, index: number) => {
+                                    (
+                                        composition: Composition,
+                                        index: number
+                                    ) => {
                                         return (
                                             <div
                                                 key={index}
@@ -147,59 +100,7 @@ const WeightGain = () => {
                         </TabsContent>
 
                         <TabsContent value="chart">
-                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                                <div className="flex flex-col items-center">
-                                    <h2 className="text-xl text-blue-500 pb-2">
-                                        Gewicht vor Schwangerschaft
-                                    </h2>
-
-                                    <select
-                                        defaultValue={defaultWeight}
-                                        className="bg-white rounded-md w-55"
-                                        onChange={handleWeightAmount}
-                                    >
-                                        {Array.from({ length: 60 }).map(
-                                            (_: unknown, index: number) => {
-                                                return (
-                                                    <option key={index}>
-                                                        {index + 40} kg
-                                                    </option>
-                                                )
-                                            }
-                                        )}
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
-                                <h2 className="text-xl text-blue-500 pb-2">
-                                    Mögliche Veränderungen
-                                </h2>
-
-                                {weekWeight.map(
-                                    (increment: number[], index: number) => {
-                                        return (
-                                            <React.Fragment key={index}>
-                                                <div className="flex flex-row justify-between mx-10">
-                                                    <strong className="text-white">
-                                                        {index + 1}. Woche
-                                                    </strong>
-
-                                                    <span className="text-sm">
-                                                        {getWeightIncrementByWeek(
-                                                            increment
-                                                        )}{' '}
-                                                        kg
-                                                    </span>
-                                                </div>
-
-                                                {(index + 1 === 13 ||
-                                                    index + 1 === 27) && <br />}
-                                            </React.Fragment>
-                                        )
-                                    }
-                                )}
-                            </div>
+                            <WeightProgress />
                         </TabsContent>
                     </div>
                 </div>

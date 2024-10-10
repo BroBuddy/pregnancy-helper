@@ -24,7 +24,7 @@ const WeekDetail = () => {
             />
 
             <Tabs defaultValue="baby" className="w-full">
-                <div className="card">
+                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
                     <TabsList className="flex flex-row mx-2 justify-center">
                         <TabButton value="baby" text="Baby" width={30} />
                         <TabButton
@@ -46,7 +46,7 @@ const WeekDetail = () => {
                 </div>
 
                 <div className="flex mt-2">
-                    <div className="card flex flex-col w-full">
+                    <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4 w-full">
                         <TabsContent value="baby">
                             <BabyDetail
                                 week={Number(week)}

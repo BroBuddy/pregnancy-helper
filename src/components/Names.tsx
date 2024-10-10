@@ -7,8 +7,12 @@ export const Names = () => {
     const boyNames = BoyNames
     const girlNames = GirlNames
 
-    const amountOfBoyNames = boyNames.map((name: any) => name.names).flat()
-    const amountOfGirlNames = girlNames.map((name: any) => name.names).flat()
+    const amountOfBoyNames = boyNames
+        .map((name: NameCategory) => name.names)
+        .flat()
+    const amountOfGirlNames = girlNames
+        .map((name: NameCategory) => name.names)
+        .flat()
 
     return (
         <section className="flex flex-col py-2 w-80">
@@ -33,7 +37,7 @@ export const Names = () => {
                                     Den richtigen Namen finden
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Auf der Suche nach einem Namen für Dein Baby
                                     kannst Du Rat in Büchern, Hitlisten oder bei
                                     einem Namens Generator suchen. Allerdings
@@ -48,7 +52,7 @@ export const Names = () => {
                                     Listen schreiben
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Schreibe alle Ideen auf. Diese Liste wird
                                     mit der Zeit wachsen, Du wirst Namen
                                     streichen und hinzufügen, verwerfen oder
@@ -61,7 +65,7 @@ export const Names = () => {
                                     Ohren auf
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Inspiration lauert überall. Bleibe
                                     aufmerksam, denn der perfekte Name könnte in
                                     Deinem Lieblingsroman stecken oder in einem
@@ -75,7 +79,7 @@ export const Names = () => {
                                     Aussprechen
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Freunde Dich mit dem Klang des Namens an,
                                     indem Du ihn mehrmals und immer wieder laut
                                     aussprichst.
@@ -87,7 +91,7 @@ export const Names = () => {
                                     Aufschreiben
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Überlege Dir auch welche Schreibweise Du für
                                     den Namen Deines Kindes festlegen willst.
                                 </p>
@@ -98,7 +102,7 @@ export const Names = () => {
                                     Der Nachname
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Achte darauf, dass Vor- und Nachname sich
                                     flüssig aussprechen lassen.
                                 </p>
@@ -109,7 +113,7 @@ export const Names = () => {
                                     Die Geschwister
                                 </h2>
 
-                                <p className="text-sm">
+                                <p className="text-sm text-left">
                                     Wenn Du möchtest, kannst Du den Namen des
                                     Babys mit denen der älteren Geschwister
                                     abstimmen.

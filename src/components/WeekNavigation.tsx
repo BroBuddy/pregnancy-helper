@@ -11,7 +11,7 @@ const WeekNavigation = ({
     const progress = (week * 100) / weeksOfPregnancy
 
     return (
-        <div className="card flex flex-col items-center w-full">
+        <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
             <Progress value={progress} className="bg-white" />
 
             {week && (
@@ -28,7 +28,9 @@ const WeekNavigation = ({
                         )}
                     </span>
 
-                    <h2 className="grow mt-5">{week}. Woche</h2>
+                    <h2 className="text-xl text-blue-500 pb-2 grow mt-5">
+                        {week}. Woche
+                    </h2>
 
                     <span className="flex-none mt-3">
                         {Number(week) + 1 <= weeksOfPregnancy && (

@@ -1,7 +1,9 @@
-const NamesList = ({ names }: any) => {
+const NamesList = (data: { names: NameCategory[] }) => {
+    const { names } = data
+
     return (
         <>
-            {names.map((name: any, index: number) => {
+            {names.map((name: NameCategory, index: number) => {
                 return (
                     <div
                         key={index}
@@ -11,7 +13,7 @@ const NamesList = ({ names }: any) => {
                             {name.letter}
                         </h2>
 
-                        <div className="flex flex-row flex-wrap">
+                        <div className="flex flex-row text-left flex-wrap">
                             {name.names.map((item: string, index: number) => {
                                 return (
                                     <div
