@@ -2,6 +2,7 @@ import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
 import TabButton from './TabButton'
 import { Timeline } from '@/service/data'
 import OverviewContent from './OverviewContent'
+import Card from './Card'
 
 const Overview = () => {
     const timeline = Timeline
@@ -25,52 +26,35 @@ const Overview = () => {
         .map((item: any) => (item !== undefined ? item : []))
 
     return (
-        <section className="flex flex-col py-2 w-80">
-            <Tabs defaultValue="highlights" className="w-full">
-                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                    <TabsList className="flex flex-row mx-2 justify-center">
-                        <TabButton
-                            value="highlights"
-                            text="Highlights"
-                            width={45}
-                        />
-                        <TabButton
-                            value="symptoms"
-                            text="Symptome"
-                            width={45}
-                        />
-                        <TabButton
-                            value="checklist"
-                            text="Checkliste"
-                            width={30}
-                        />
-                    </TabsList>
-                </div>
+        <section className="flex flex-col py-2 w-full">
+            <Tabs defaultValue="highlights">
+                <TabsList className="flex flex-row mx-2 justify-center">
+                    <TabButton
+                        value="highlights"
+                        text="Highlights"
+                        width={37}
+                    />
+                    <TabButton value="symptoms" text="Symptome" width={37} />
+                    <TabButton value="checklist" text="Checkliste" width={25} />
+                </TabsList>
 
-                <div className="flex mt-2">
-                    <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4 w-full">
-                        <TabsContent value="highlights">
-                            <h2 className="text-xl text-blue-500 pb-2">
-                                Anstehende Highlights
-                            </h2>
-                            <OverviewContent items={highlights} />
-                        </TabsContent>
+                <TabsContent value="highlights">
+                    <Card heading="Anstehende Highlights">
+                        <OverviewContent items={highlights} />
+                    </Card>
+                </TabsContent>
 
-                        <TabsContent value="symptoms">
-                            <h2 className="text-xl text-blue-500 pb-2">
-                                Mögliche Symptome
-                            </h2>
-                            <OverviewContent items={symptoms} />
-                        </TabsContent>
+                <TabsContent value="symptoms">
+                    <Card heading="Mögliche Symptome">
+                        <OverviewContent items={symptoms} />
+                    </Card>
+                </TabsContent>
 
-                        <TabsContent value="checklist">
-                            <h2 className="text-xl text-blue-500 pb-2">
-                                Hilfreiche Checkliste
-                            </h2>
-                            <OverviewContent items={checklist} />
-                        </TabsContent>
-                    </div>
-                </div>
+                <TabsContent value="checklist">
+                    <Card heading="Hilfreiche Checkliste">
+                        <OverviewContent items={checklist} />
+                    </Card>
+                </TabsContent>
             </Tabs>
         </section>
     )

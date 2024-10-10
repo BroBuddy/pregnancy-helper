@@ -8,6 +8,7 @@ import {
 } from '@radix-ui/react-popover'
 import { Calendar } from './ui/calendar'
 import { useState } from 'react'
+import Card from './Card'
 
 const months: string[] = [
     '01',
@@ -27,7 +28,7 @@ const months: string[] = [
 const Schedule = () => {
     const timeline = Timeline
 
-    const weeksOfPregnancy: number = 41
+    const weeksOfPregnancy: number = 40
     const [date, setDate] = useState<string>('03/20/2025')
 
     const calculateDate = (week: number | string) => {
@@ -42,16 +43,12 @@ const Schedule = () => {
 
     return (
         <>
-            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                <h2 className="text-xl text-blue-500 pb-2">
-                    Zeitplan bis zur Geburt
-                </h2>
-
+            <Card heading="Datum der Geburt">
                 <Popover>
                     <PopoverTrigger asChild>
                         <button
                             className={cn(
-                                'justify-center items-center flex bg-white/0',
+                                ' items-center flex bg-white/0 text-sm',
                                 !date && 'text-muted-foreground'
                             )}
                         >
@@ -64,7 +61,7 @@ const Schedule = () => {
                         </button>
                     </PopoverTrigger>
 
-                    <PopoverContent className="w-auto p-0 bg-white rounded-lg">
+                    <PopoverContent className="w-auto p-0 bg-white/100">
                         <Calendar
                             mode="single"
                             fromDate={new Date()}
@@ -74,40 +71,33 @@ const Schedule = () => {
                         />
                     </PopoverContent>
                 </Popover>
-            </div>
+            </Card>
 
             {date !== 'undefined' &&
                 timeline.map((trimester: Trimester, index: number) => {
                     return (
-                        <div
-                            className="flex flex-col rounded-lg bg-white/70 my-4 p-4"
+                        <Card
+                            heading={`${index + 1}. Trimester (Woche ${trimester.timeline})`}
                             key={index}
                         >
-                            <h2 className="text-xl text-blue-500 pb-2">
-                                {index + 1}. Trimester (Woche{' '}
-                                {trimester.timeline})
-                            </h2>
-
                             {trimester.weeks.map(
                                 (item: Week, index: number) => {
                                     return (
                                         <div
                                             key={index}
-                                            className="flex flex-row justify-between mx-4"
+                                            className="flex flex-col text-sm w-full"
                                         >
-                                            <strong className="text-white">
-                                                {item.week}. Woche
-                                            </strong>
+                                            <span>{item.week}. Woche</span>
 
-                                            <span className="text-sm text-blue-500">
+                                            <span className="text-green-900 mb-3">
                                                 {getFullDate(
                                                     calculateDate(
                                                         weeksOfPregnancy -
                                                             item.week +
                                                             1
                                                     )
-                                                )}{' '}
-                                                -{' '}
+                                                )}
+                                                <span className="px-1">-</span>
                                                 {getFullDate(
                                                     calculateDate(
                                                         weeksOfPregnancy -
@@ -119,7 +109,7 @@ const Schedule = () => {
                                     )
                                 }
                             )}
-                        </div>
+                        </Card>
                     )
                 })}
         </>

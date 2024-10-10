@@ -5,6 +5,7 @@ import WeekNavigation from './WeekNavigation'
 import TabItems from './TabItems'
 import BabyDetail from './BabyDetail'
 import TabButton from './TabButton'
+import Card from './Card'
 
 const WeekDetail = () => {
     const timeline = Timeline
@@ -17,62 +18,47 @@ const WeekDetail = () => {
         .find((item: Week) => item.week === Number(week))
 
     return (
-        <section className="flex flex-col py-2 w-80">
+        <section className="flex flex-col w-full">
             <WeekNavigation
                 week={Number(week)}
                 weeksOfPregnancy={weeksOfPregnancy}
             />
 
             <Tabs defaultValue="baby" className="w-full">
-                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                    <TabsList className="flex flex-row mx-2 justify-center">
-                        <TabButton value="baby" text="Baby" width={30} />
-                        <TabButton
-                            value="highlights"
-                            text="Highlights"
-                            width={45}
-                        />
-                        <TabButton
-                            value="symptoms"
-                            text="Symptome"
-                            width={45}
-                        />
-                        <TabButton
-                            value="checklist"
-                            text="Checkliste"
-                            width={30}
-                        />
-                    </TabsList>
-                </div>
+                <TabsList className="flex flex-row mx-2 justify-center">
+                    <TabButton value="baby" text="Baby" width={30} />
+                    <TabButton
+                        value="highlights"
+                        text="Highlights"
+                        width={45}
+                    />
+                    <TabButton value="symptoms" text="Symptome" width={45} />
+                    <TabButton value="checklist" text="Checkliste" width={30} />
+                </TabsList>
 
-                <div className="flex mt-2">
-                    <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4 w-full">
-                        <TabsContent value="baby">
-                            <BabyDetail
-                                week={Number(week)}
-                                baby={details?.baby}
-                            />
+                <Card>
+                    <TabsContent value="baby">
+                        <BabyDetail week={Number(week)} baby={details?.baby} />
+                    </TabsContent>
+
+                    {details?.highlights && (
+                        <TabsContent value="highlights">
+                            <TabItems items={details?.highlights} />
                         </TabsContent>
+                    )}
 
-                        {details?.highlights && (
-                            <TabsContent value="highlights">
-                                <TabItems items={details?.highlights} />
-                            </TabsContent>
-                        )}
+                    {details?.symptoms && (
+                        <TabsContent value="symptoms">
+                            <TabItems items={details?.symptoms} />
+                        </TabsContent>
+                    )}
 
-                        {details?.symptoms && (
-                            <TabsContent value="symptoms">
-                                <TabItems items={details?.symptoms} />
-                            </TabsContent>
-                        )}
-
-                        {details?.checklist && (
-                            <TabsContent value="checklist">
-                                <TabItems items={details?.checklist} />
-                            </TabsContent>
-                        )}
-                    </div>
-                </div>
+                    {details?.checklist && (
+                        <TabsContent value="checklist">
+                            <TabItems items={details?.checklist} />
+                        </TabsContent>
+                    )}
+                </Card>
             </Tabs>
         </section>
     )

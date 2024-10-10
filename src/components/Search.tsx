@@ -1,5 +1,6 @@
 import { FAQ } from '@/service/faq'
 import React, { ChangeEvent, useState } from 'react'
+import Card from './Card'
 
 const Search = () => {
     const [faq, setFaq] = useState<Faq[]>(FAQ)
@@ -25,30 +26,25 @@ const Search = () => {
 
     return (
         <>
-            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
-                <h2 className="text-xl text-blue-500 pb-2">Themen-Suche</h2>
+            <Card heading="Themen-Suche">
+                <h2 className="text-xl text-green-700 pb-2"></h2>
 
                 <p className="text-sm">Min. 3 Buchstaben eingeben.</p>
 
                 <input
                     type="text"
-                    className="bg-white rounded-lg p-1 mt-3  text-sm"
-                    placeholder="Was interessiert dich?"
+                    className="text-white bg-green-700/40 py-2 px-3 mt-3 text-sm"
                     onChange={handleSearch}
                 />
-            </div>
+            </Card>
 
             {q && (
-                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                    <h2 className="text-xl text-blue-500 pb-2">
-                        {faq?.length} Fragen gefunden
-                    </h2>
-
+                <Card heading={`${faq?.length} Fragen gefunden`}>
                     {faq &&
                         faq.map((item: Faq, index: number) => {
                             return (
                                 <React.Fragment key={index}>
-                                    <strong className="text-sm">
+                                    <strong className="text-sm mt-2">
                                         {item.question}
                                     </strong>
 
@@ -67,7 +63,7 @@ const Search = () => {
                                 </React.Fragment>
                             )
                         })}
-                </div>
+                </Card>
             )}
         </>
     )

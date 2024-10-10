@@ -1,5 +1,6 @@
 import { ChangeEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Card from './Card'
 
 const Cycle = () => {
     const navigate = useNavigate()
@@ -12,14 +13,12 @@ const Cycle = () => {
     }
 
     return (
-        <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-            <h2 className="text-xl text-blue-500 pb-2">Zyklus</h2>
-
+        <Card heading="Woche">
             <p className="text-sm">In welcher Woche befindest du dich?</p>
 
             <div className="flex flex-col items-center">
                 <select
-                    className="bg-white rounded-md mt-3"
+                    className="bg-green-700/40 text-sm text-white p-1 mt-3"
                     onChange={handleCycleWeek}
                 >
                     <option>Bitte auswählen</option>
@@ -32,7 +31,7 @@ const Cycle = () => {
                     )}
                 </select>
             </div>
-        </div>
+        </Card>
     )
 }
 

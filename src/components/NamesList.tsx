@@ -1,3 +1,5 @@
+import Card from './Card'
+
 const NamesList = (data: { names: NameCategory[] }) => {
     const { names } = data
 
@@ -5,14 +7,7 @@ const NamesList = (data: { names: NameCategory[] }) => {
         <>
             {names.map((name: NameCategory, index: number) => {
                 return (
-                    <div
-                        key={index}
-                        className="flex flex-col rounded-lg bg-white/70 my-4 p-4"
-                    >
-                        <h2 className="text-xl text-blue-500 mt-2 pb-2">
-                            {name.letter}
-                        </h2>
-
+                    <Card key={index} heading={name.letter}>
                         <div className="flex flex-row text-left flex-wrap">
                             {name.names.map((item: string, index: number) => {
                                 return (
@@ -26,7 +21,7 @@ const NamesList = (data: { names: NameCategory[] }) => {
                                 )
                             })}
                         </div>
-                    </div>
+                    </Card>
                 )
             })}
         </>

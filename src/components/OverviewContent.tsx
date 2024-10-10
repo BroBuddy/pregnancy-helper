@@ -13,13 +13,14 @@ const OverviewContent = (data: { items: WeekDetail[][] }) => {
                             to={`/week/${index + 2}`}
                             className="flex text-left flex-col"
                         >
-                            <strong className="text-white">
-                                {index + 2}. Woche
-                            </strong>
+                            <div className="flex flex-row justify-between">
+                                <span>{index + 2}. Woche</span>
+                                <span>&rarr;</span>
+                            </div>
 
                             {item.length === 0 && (
-                                <span className="text-sm text-gray-500">
-                                    Wurde noch nicht gepflegt.
+                                <span className="text-sm text-gray-400">
+                                    <em>Wurde noch nicht gepflegt.</em>
                                 </span>
                             )}
 
@@ -29,7 +30,7 @@ const OverviewContent = (data: { items: WeekDetail[][] }) => {
                                         (item: WeekDetail, index: number) => {
                                             return (
                                                 <li
-                                                    className="text-sm text-blue-500"
+                                                    className="text-sm text-green-700"
                                                     key={index}
                                                 >
                                                     {item.name}

@@ -1,6 +1,7 @@
 import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
 import TabButton from './TabButton'
 import WeightProgress from './WeightProgress'
+import Card from './Card'
 
 const compositions: Composition[] = [
     {
@@ -39,70 +40,54 @@ const compositions: Composition[] = [
 
 const WeightGain = () => {
     return (
-        <section className="flex flex-col py-2 w-80">
-            <Tabs defaultValue="weight" className="w-full">
-                <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                    <TabsList className="flex flex-row mx-2 justify-center">
-                        <TabButton value="weight" text="Gewicht" width={36} />
-                        <TabButton value="chart" text="Verlauf" width={36} />
-                    </TabsList>
-                </div>
+        <section className="flex flex-col py-2 w-full">
+            <Tabs defaultValue="weight">
+                <TabsList className="flex flex-row justify-center">
+                    <TabButton value="weight" text="Gewicht" width={25} />
+                    <TabButton value="chart" text="Verlauf" width={25} />
+                </TabsList>
 
-                <div className="flex mt-2">
-                    <div className="flex flex-col w-full">
-                        <TabsContent value="weight">
-                            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
-                                <h2 className="text-xl text-blue-500 pb-2">
-                                    Gewichtszunahme
-                                </h2>
+                <div className="flex flex-col w-full">
+                    <TabsContent value="weight">
+                        <Card heading="Gewichtszunahme">
+                            <p>
+                                Normalgewichtige Frauen legen im Laufe der
+                                Schwangerschaft im Durchschnitt etwa 11,5 bis 16
+                                kg zu.
+                            </p>
 
-                                <p className="text-sm text-left">
-                                    Normalgewichtige Frauen legen im Laufe der
-                                    Schwangerschaft im Durchschnitt etwa 11,5
-                                    bis 16 kg zu.
-                                </p>
-                                <p className="text-sm text-left mt-5">
-                                    Dabei fällt die Gewichtszunahme im ersten
-                                    Trimester mit insgesamt 0,5 bis 2 kg eher
-                                    gering aus, während sie sich im zweiten und
-                                    dritten Trimester auf circa 0,4 kg pro Woche
-                                    steigern kann.
-                                </p>
-                            </div>
+                            <p className="mt-3">
+                                Dabei fällt die Gewichtszunahme im ersten
+                                Trimester mit insgesamt 0,5 bis 2 kg eher gering
+                                aus, während sie sich im zweiten und dritten
+                                Trimester auf circa 0,4 kg pro Woche steigern
+                                kann.
+                            </p>
+                        </Card>
 
-                            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
-                                <h2 className="text-xl text-blue-500 pb-2">
-                                    Zusammensetzung
-                                </h2>
+                        <Card heading="Zusammensetzung">
+                            {compositions.map(
+                                (composition: Composition, index: number) => {
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="flex flex-row justify-between text-sm"
+                                        >
+                                            <span>{composition.title}</span>
 
-                                {compositions.map(
-                                    (
-                                        composition: Composition,
-                                        index: number
-                                    ) => {
-                                        return (
-                                            <div
-                                                key={index}
-                                                className="flex flex-row justify-between mx-2"
-                                            >
-                                                <strong className="text-white">
-                                                    {composition.title}
-                                                </strong>
+                                            <span className="text-green-900">
+                                                {composition.text}
+                                            </span>
+                                        </div>
+                                    )
+                                }
+                            )}
+                        </Card>
+                    </TabsContent>
 
-                                                <span className="text-sm">
-                                                    {composition.text}
-                                                </span>
-                                            </div>
-                                        )
-                                    }
-                                )}
-                            </div>
-                        </TabsContent>
-
-                        <TabsContent value="chart">
-                            <WeightProgress />
-                        </TabsContent>
-                    </div>
+                    <TabsContent value="chart">
+                        <WeightProgress />
+                    </TabsContent>
                 </div>
             </Tabs>
         </section>

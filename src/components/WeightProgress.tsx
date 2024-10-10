@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react'
+import Card from './Card'
 
 const weightTable: number[][] = [
     [125, 175],
@@ -52,15 +53,11 @@ const WeightProgress = () => {
 
     return (
         <>
-            <div className="flex flex-col rounded-lg bg-white/70 my-2 p-4">
+            <Card heading="Gewicht vor Schwangerschaft">
                 <div className="flex flex-col items-center">
-                    <h2 className="text-xl text-blue-500 pb-2">
-                        Gewicht vor Schwangerschaft
-                    </h2>
-
                     <select
                         defaultValue={defaultWeight}
-                        className="bg-white rounded-md w-55"
+                        className="bg-green-700/40 text-sm text-white p-1 mt-3"
                         onChange={handleWeightAmount}
                     >
                         {Array.from({ length: 60 }).map(
@@ -72,22 +69,16 @@ const WeightProgress = () => {
                         )}
                     </select>
                 </div>
-            </div>
+            </Card>
 
-            <div className="flex flex-col rounded-lg bg-white/70 my-4 p-4">
-                <h2 className="text-xl text-blue-500 pb-2">
-                    Mögliche Veränderungen
-                </h2>
-
+            <Card heading="Mögliche Veränderungen">
                 {weekWeight.map((increment: number[], index: number) => {
                     return (
                         <React.Fragment key={index}>
-                            <div className="flex flex-row justify-between mx-10">
-                                <strong className="text-white">
-                                    {index + 1}. Woche
-                                </strong>
+                            <div className="flex flex-row justify-between text-sm">
+                                <span>{index + 1}. Woche</span>
 
-                                <span className="text-sm">
+                                <span className="text-green-900">
                                     {getWeightIncrementByWeek(increment)} kg
                                 </span>
                             </div>
@@ -96,7 +87,7 @@ const WeightProgress = () => {
                         </React.Fragment>
                     )
                 })}
-            </div>
+            </Card>
         </>
     )
 }
