@@ -1,17 +1,21 @@
 import React, { useState, useEffect, ChangeEvent } from 'react'
 import Card from './Card'
+import LineChart from './LineChart'
 
 const weightTable: number[][] = [
-    [125, 175],
+    [125, 170],
     [300, 475],
     [325, 475],
 ]
-const WeightProgress = () => {
-    const [startWeight, setStartWeight] = useState<number>(55000)
-    const [weekWeight, setWeekWeight] = useState<number[][]>([])
 
-    const defaultWeight = startWeight / 1000 + ' kg'
+const WeightProgress = () => {
+    const [startWeight, setStartWeight] = useState<number>(45000)
+    const [weekWeight, setWeekWeight] = useState<number[][]>([])
+    const [minWeights, setMinWeights] = useState<number[]>([])
+    const [maxWeights, setMaxWeights] = useState<number[]>([])
+
     const weeksOfPregnancy: number = 41
+    const defaultWeight = startWeight / 1000 + ' kg'
 
     useEffect(() => {
         const weightInWeek = [[startWeight, startWeight]]
@@ -36,7 +40,23 @@ const WeightProgress = () => {
         }
 
         setWeekWeight(weightInWeek)
+
+        setMinWeights(
+            weightInWeek.map((week) => {
+                return Number((week[0] / 1000).toFixed(1))
+            })
+        )
+
+        setMaxWeights(
+            weightInWeek.map((week) => {
+                return Number((week[1] / 1000).toFixed(1))
+            })
+        )
     }, [startWeight])
+
+    useEffect(() => {
+        setStartWeight(45000)
+    }, [])
 
     const getWeightIncrementByWeek = (increment: number[]) => {
         return (
@@ -60,10 +80,10 @@ const WeightProgress = () => {
                         className="bg-green-700/40 text-sm text-white p-1 mt-3"
                         onChange={handleWeightAmount}
                     >
-                        {Array.from({ length: 60 }).map(
+                        {Array.from({ length: 50 }).map(
                             (_: unknown, index: number) => {
                                 return (
-                                    <option key={index}>{index + 40} kg</option>
+                                    <option key={index}>{index + 45} kg</option>
                                 )
                             }
                         )}
@@ -72,6 +92,13 @@ const WeightProgress = () => {
             </Card>
 
             <Card heading="Mögliche Veränderungen">
+                <div className="m-2">
+                    <LineChart
+                        minWeights={minWeights}
+                        maxWeights={maxWeights}
+                    />
+                </div>
+
                 {weekWeight.map((increment: number[], index: number) => {
                     return (
                         <React.Fragment key={index}>

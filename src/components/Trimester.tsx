@@ -11,16 +11,20 @@ const Trimester = () => {
                 <TabsList className="flex flex-row justify-center">
                     <TabButton value="calculator" text="Zyklus" width={30} />
                     <TabButton value="calendar" text="Zeitplan" width={30} />
+                    <TabButton value="doctor" text="FAQ" width={30} />
                 </TabsList>
 
                 <div className="flex flex-col">
                     <TabsContent value="calculator">
                         <Cycle />
-                        <Search />
                     </TabsContent>
 
                     <TabsContent value="calendar">
                         <Schedule />
+                    </TabsContent>
+
+                    <TabsContent value="doctor">
+                        <Search />
                     </TabsContent>
                 </div>
             </Tabs>

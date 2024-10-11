@@ -17,15 +17,15 @@ const Names = () => {
 
     return (
         <section className="flex flex-col py-2 w-full">
-            <Tabs defaultValue="gender">
+            <Tabs defaultValue="names">
                 <TabsList className="flex flex-row justify-center">
-                    <TabButton value="gender" text="Geschlecht" width={29} />
+                    <TabButton value="names" text="Namen" width={29} />
                     <TabButton value="boy" text="Jungen" width={29} />
                     <TabButton value="girl" text="Mädchen" width={29} />
                 </TabsList>
 
                 <div className="flex flex-col w-full">
-                    <TabsContent value="gender">
+                    <TabsContent value="names">
                         <Card heading="Den richtigen Namen finden">
                             <p>
                                 Auf der Suche nach einem Namen für Dein Baby
@@ -35,17 +35,15 @@ const Names = () => {
                                 arbeiten, um sich langsam an den perfekten Namen
                                 heranzutasten.
                             </p>
-                        </Card>
 
-                        <Card heading="Listen schreiben">
+                            <strong className="my-3">Listen schreiben</strong>
                             <p>
                                 Schreibe alle Ideen auf. Diese Liste wird mit
                                 der Zeit wachsen, Du wirst Namen streichen und
                                 hinzufügen, verwerfen oder wiederentdecken.
                             </p>
-                        </Card>
 
-                        <Card heading="Ohren auf">
+                            <strong className="my-3">Ohren auf</strong>
                             <p>
                                 Inspiration lauert überall. Bleibe aufmerksam,
                                 denn der perfekte Name könnte in Deinem
@@ -53,31 +51,27 @@ const Names = () => {
                                 eine Person oder ein Ort könnte Dich
                                 inspirieren.
                             </p>
-                        </Card>
 
-                        <Card heading="Aussprechen">
+                            <strong className="my-3">Aussprechen</strong>
                             <p>
                                 Freunde Dich mit dem Klang des Namens an, indem
                                 Du ihn mehrmals und immer wieder laut
                                 aussprichst.
                             </p>
-                        </Card>
 
-                        <Card heading="Aufschreiben">
+                            <strong className="my-3">Aufschreiben</strong>
                             <p>
                                 Überlege Dir auch welche Schreibweise Du für den
                                 Namen Deines Kindes festlegen willst.
                             </p>
-                        </Card>
 
-                        <Card heading="Der Nachname">
+                            <strong className="my-3">Der Nachname</strong>
                             <p>
                                 Achte darauf, dass Vor- und Nachname sich
                                 flüssig aussprechen lassen.
                             </p>
-                        </Card>
 
-                        <Card heading="Die Geschwister">
+                            <strong className="my-3">Die Geschwister</strong>
                             <p>
                                 Wenn Du möchtest, kannst Du den Namen des Babys
                                 mit denen der älteren Geschwister abstimmen.

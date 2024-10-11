@@ -4,22 +4,18 @@ import Card from './Card'
 
 const Search = () => {
     const [faq, setFaq] = useState<Faq[]>(FAQ)
-    const [q, setQ] = useState<string>('')
 
     const handleSearch = (event: ChangeEvent<{ value: string }>) => {
         const value = event?.currentTarget?.value.toLowerCase()
         const length = value.length
 
         if (length >= 3) {
-            setQ(value)
-
             const list = faq.filter((item: Faq) => {
                 return item.question.toLowerCase().includes(value) ? item : null
             })
 
             setFaq(list)
         } else {
-            setQ('')
             setFaq(FAQ)
         }
     }
@@ -29,7 +25,7 @@ const Search = () => {
             <Card heading="Themen-Suche">
                 <h2 className="text-xl text-green-700 pb-2"></h2>
 
-                <p className="text-sm">Min. 3 Buchstaben eingeben.</p>
+                <p className="text-sm">Filter</p>
 
                 <input
                     type="text"
@@ -38,7 +34,7 @@ const Search = () => {
                 />
             </Card>
 
-            {q && (
+            {
                 <Card heading={`${faq?.length} Fragen gefunden`}>
                     {faq &&
                         faq.map((item: Faq, index: number) => {
@@ -64,7 +60,7 @@ const Search = () => {
                             )
                         })}
                 </Card>
-            )}
+            }
         </>
     )
 }

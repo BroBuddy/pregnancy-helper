@@ -9,6 +9,8 @@ import {
 import { Calendar } from './ui/calendar'
 import { useState } from 'react'
 import Card from './Card'
+import { Link } from 'react-router-dom'
+import React from 'react'
 
 const months: string[] = [
     '01',
@@ -83,29 +85,38 @@ const Schedule = () => {
                             {trimester.weeks.map(
                                 (item: Week, index: number) => {
                                     return (
-                                        <div
-                                            key={index}
-                                            className="flex flex-col text-sm w-full"
-                                        >
-                                            <span>{item.week}. Woche</span>
+                                        <React.Fragment key={index}>
+                                            <Link
+                                                to={`/week/${index + 2}`}
+                                                className="flex flex-col text-sm w-full"
+                                            >
+                                                <div className="flex flex-row justify-between">
+                                                    <span>
+                                                        {index + 2}. Woche
+                                                    </span>
+                                                    <span>&rarr;</span>
+                                                </div>
 
-                                            <span className="text-green-900 mb-3">
-                                                {getFullDate(
-                                                    calculateDate(
-                                                        weeksOfPregnancy -
-                                                            item.week +
-                                                            1
-                                                    )
-                                                )}
-                                                <span className="px-1">-</span>
-                                                {getFullDate(
-                                                    calculateDate(
-                                                        weeksOfPregnancy -
-                                                            item.week
-                                                    )
-                                                )}
-                                            </span>
-                                        </div>
+                                                <div className="text-green-900 mb-3">
+                                                    {getFullDate(
+                                                        calculateDate(
+                                                            weeksOfPregnancy -
+                                                                item.week +
+                                                                1
+                                                        )
+                                                    )}
+                                                    <span className="px-1">
+                                                        -
+                                                    </span>
+                                                    {getFullDate(
+                                                        calculateDate(
+                                                            weeksOfPregnancy -
+                                                                item.week
+                                                        )
+                                                    )}
+                                                </div>
+                                            </Link>
+                                        </React.Fragment>
                                     )
                                 }
                             )}

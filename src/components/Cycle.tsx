@@ -7,7 +7,7 @@ const Cycle = () => {
     const weeksOfPregnancy: number = 41
 
     const handleCycleWeek = (event: ChangeEvent<{ value: string }>) => {
-        const week = event?.currentTarget?.value.split(' ')[0]
+        const week = event?.currentTarget?.value.split('.')[0]
 
         navigate(`/week/${week}`)
     }

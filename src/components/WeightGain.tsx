@@ -2,43 +2,77 @@ import { Tabs, TabsList, TabsContent } from '@radix-ui/react-tabs'
 import TabButton from './TabButton'
 import WeightProgress from './WeightProgress'
 import Card from './Card'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { Doughnut } from 'react-chartjs-2'
 
 const compositions: Composition[] = [
     {
-        title: 'Gewicht des Babys',
+        title: '1. Gewicht des Babys',
         text: 'ca. 3 – 3,8 kg',
     },
     {
-        title: 'Blutvolumen',
+        title: '2. Blutvolumen',
         text: 'ca. 1,2 kg',
     },
     {
-        title: 'Gebärmutter',
+        title: '3. Gebärmutter',
         text: 'ca. 1,3 kg',
     },
     {
-        title: 'Plazenta',
+        title: '4. Plazenta',
         text: 'ca. 0,6 – 0,8 kg',
     },
     {
-        title: 'Fruchtwasser',
+        title: '5. Fruchtwasser',
         text: 'ca. 1,3 kg',
     },
     {
-        title: 'Gewebsflüssigkeit',
+        title: '6. Gewebsflüssigkeit',
         text: 'ca. 2 – 2,5 kg',
     },
     {
-        title: 'Brustdrüsengewebe',
+        title: '7. Brustdrüsengewebe',
         text: 'ca. 0,8 – 1,0 kg',
     },
     {
-        title: 'Depotfett',
+        title: '8. Depotfett',
         text: 'ca. 1,7 kg',
     },
 ]
 
+ChartJS.register(ArcElement, Tooltip, Legend)
+
 const WeightGain = () => {
+    const data = {
+        labels: ['1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.'],
+        datasets: [
+            {
+                label: 'ca. in kg',
+                data: [3.4, 1.2, 1.3, 0.7, 1.3, 2.25, 0.9, 1.7],
+                backgroundColor: [
+                    '#81BECE',
+                    '#378BA4',
+                    '#036280',
+                    '#012E4A',
+                    '#E0F4F5',
+                    '#A7D1D2',
+                    '#63898C',
+                    '#015366',
+                ],
+                borderColor: [
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                    'rgba(255, 255, 255, 0.7)',
+                ],
+                borderWidth: 2,
+            },
+        ],
+    }
     return (
         <section className="flex flex-col py-2 w-full">
             <Tabs defaultValue="weight">
@@ -82,6 +116,10 @@ const WeightGain = () => {
                                     )
                                 }
                             )}
+
+                            <div className="m-2">
+                                <Doughnut data={data} />
+                            </div>
                         </Card>
                     </TabsContent>
 
